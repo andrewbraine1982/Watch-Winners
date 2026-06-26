@@ -98,9 +98,10 @@ padding:0 40px;
 }
 
 .ww-logo-image{
-  height:200px;
+  height:180px;
   width:auto;
   display:block;
+  transform:translateY(18px);
 }
 
 .ww-logo-mark{
