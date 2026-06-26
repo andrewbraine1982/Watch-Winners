@@ -1,7 +1,16 @@
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-black text-white">
-      <h1 className="text-6xl font-bold">Watch Winners</h1>
+    <main style={{
+      minHeight: "100vh",
+      background: "#000",
+      color: "#fff",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      fontSize: "64px",
+      fontWeight: "bold"
+    }}>
+      Watch Winners
     </main>
-  );
+  )
 }
