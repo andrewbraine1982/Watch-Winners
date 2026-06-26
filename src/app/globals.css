@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { background: #F8F6F2; color: #171717; }
+.hero-glow { background: radial-gradient(circle at 70% 40%, rgba(200,164,90,.32), transparent 34%), linear-gradient(135deg, #050706, #0D3B2E 60%, #040404); }
+.gold-line { height: 1px; background: linear-gradient(90deg, transparent, #C8A45A, transparent); }
