@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { ArrowRight, CheckCircle, PlayCircle, ShieldCheck, Star } from 'lucide-react'
-import { competitions, currentDraw, site, winners } from '@/data/site'
+import { competitions, currentDraw, site, winners } from '../data/site'
 
 function imageFallback(src: string) {
   return src
