@@ -1,15 +1,39 @@
 import styles from "./page.module.css";
 
 export default function Home() {
+  const competitions = [
+    {
+      title: "Rolex Daytona",
+      value: "£22,500",
+      price: "£19.99",
+      image: "/images/watches/daytona.jpg",
+      sold: "82%",
+    },
+    {
+      title: "Rolex Submariner",
+      value: "£10,800",
+      price: "£9.99",
+      image: "/images/watches/submariner.jpg",
+      sold: "71%",
+    },
+    {
+      title: "Rolex Datejust",
+      value: "£8,950",
+      price: "£7.99",
+      image: "/images/watches/datejust.jpg",
+      sold: "64%",
+    },
+  ];
+
   return (
     <main className={styles.page}>
       <header className={styles.nav}>
-        <a className={styles.brand} href="#">
-          <span className={styles.crown}>◆</span>
-          <span className={styles.brandText}>
-            WATCH
+        <a href="#" className={styles.brand}>
+          <span className={styles.mark}>WW</span>
+          <span>
+            Watch
             <br />
-            WINNERS
+            Winners
           </span>
         </a>
 
@@ -20,30 +44,28 @@ export default function Home() {
           <a href="#faq">FAQ</a>
         </nav>
 
-        <a className={styles.navButton} href="#competitions">
+        <a href="#competitions" className={styles.navButton}>
           Enter Now
         </a>
       </header>
 
       <section className={styles.hero}>
-        <div className={styles.heroCopy}>
-          <div className={styles.trustBadge}>★ 4.9/5 Trustpilot · 8,700+ winners</div>
+        <div className={styles.heroContent}>
+          <p className={styles.badge}>★ 4.9/5 Trustpilot · 8,700+ winners</p>
 
           <h1>
-            Win the
+            Win the Rolex
             <br />
-            Rolex of
-            <br />
-            your dreams.
+            of your dreams.
           </h1>
 
-          <p>
-            Enter verified luxury watch competitions from £14.99. Live draws,
-            real winners and premium timepieces delivered nationwide.
+          <p className={styles.heroText}>
+            Enter luxury watch competitions from £14.99. Live draws, verified
+            winners and premium timepieces delivered nationwide.
           </p>
 
           <div className={styles.heroActions}>
-            <a href="#competitions" className={styles.goldButton}>
+            <a href="#competitions" className={styles.primaryButton}>
               Enter from £14.99
             </a>
             <span>Next live draw closes soon</span>
@@ -65,9 +87,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.heroVisual}>
+        <div className={styles.heroImageWrap}>
           <img src="/images/watches/hero-watch.jpg" alt="Rolex GMT-Master II" />
-          <div className={styles.prizeCard}>
+          <div className={styles.prizePanel}>
             <span>Current Prize</span>
             <strong>Rolex GMT-Master II</strong>
             <small>Retail value £11,950</small>
@@ -78,7 +100,7 @@ export default function Home() {
       <section className={styles.stats}>
         <div>
           <strong>£24M+</strong>
-          <span>Worth of watches given away</span>
+          <span>Worth of prizes given away</span>
         </div>
         <div>
           <strong>8,700+</strong>
@@ -86,32 +108,30 @@ export default function Home() {
         </div>
         <div>
           <strong>100%</strong>
-          <span>Live & transparent draws</span>
+          <span>Live transparent draws</span>
         </div>
       </section>
 
       <section id="competitions" className={styles.competitions}>
         <div className={styles.sectionHeading}>
           <span>Live Competitions</span>
-          <h2>Choose your next luxury watch.</h2>
+          <h2>Choose your next luxury timepiece.</h2>
         </div>
 
         <div className={styles.grid}>
-          {[
-            ["Rolex Daytona", "£22,500", "£19.99", "daytona.jpg"],
-            ["Rolex Submariner", "£10,800", "£9.99", "submariner.jpg"],
-            ["Rolex Datejust", "£8,950", "£7.99", "datejust.jpg"],
-          ].map(([title, value, price, image]) => (
-            <article className={styles.card} key={title}>
-              <img src={`/images/watches/${image}`} alt={title} />
-              <h3>{title}</h3>
-              <p>Retail value {value}</p>
-              <div className={styles.progress}>
-                <div />
-              </div>
-              <div className={styles.cardBottom}>
-                <strong>From {price}</strong>
-                <button>Enter Now</button>
+          {competitions.map((item) => (
+            <article key={item.title} className={styles.card}>
+              <img src={item.image} alt={item.title} />
+              <div className={styles.cardContent}>
+                <h3>{item.title}</h3>
+                <p>Retail value {item.value}</p>
+                <div className={styles.progress}>
+                  <div style={{ width: item.sold }} />
+                </div>
+                <div className={styles.cardBottom}>
+                  <strong>From {item.price}</strong>
+                  <button>Enter Now</button>
+                </div>
               </div>
             </article>
           ))}
@@ -119,14 +139,17 @@ export default function Home() {
       </section>
 
       <section id="trust" className={styles.trust}>
+        <p>Why enter with us?</p>
         <h2>Fair. Transparent. Trusted.</h2>
-        <p>
-          Every winner is announced publicly. Every draw is independently verified.
-          Every prize is real.
-        </p>
+        <span>
+          Every winner is announced publicly. Every draw is recorded. Every prize
+          is real.
+        </span>
       </section>
 
-      <footer className={styles.footer}>© Watch Winners. Play responsibly.</footer>
+      <footer className={styles.footer}>
+        © {new Date().getFullYear()} Watch Winners. Play responsibly.
+      </footer>
     </main>
   );
 }
