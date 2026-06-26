@@ -1,8 +1,354 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ==========================================
+   WATCH WINNERS
+   GLOBAL STYLES
+========================================== */
 
-html { scroll-behavior: smooth; }
-body { background: #F8F6F2; color: #171717; }
-.hero-glow { background: radial-gradient(circle at 70% 40%, rgba(200,164,90,.32), transparent 34%), linear-gradient(135deg, #050706, #0D3B2E 60%, #040404); }
-.gold-line { height: 1px; background: linear-gradient(90deg, transparent, #C8A45A, transparent); }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Inter,Arial,sans-serif;
+background:#f8f6f2;
+color:#171717;
+overflow-x:hidden;
+}
+
+img{
+display:block;
+max-width:100%;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+button{
+font:inherit;
+cursor:pointer;
+}
+
+section{
+padding:110px 80px;
+}
+
+.section-header{
+max-width:760px;
+margin:0 auto 70px;
+text-align:center;
+}
+
+.section-header span{
+display:block;
+font-size:13px;
+letter-spacing:3px;
+font-weight:700;
+color:#c8a45a;
+margin-bottom:16px;
+text-transform:uppercase;
+}
+
+.section-header h2{
+font-family:Georgia,serif;
+font-size:62px;
+line-height:1;
+letter-spacing:-2px;
+margin-bottom:18px;
+}
+
+.section-header p{
+font-size:20px;
+color:#666;
+line-height:1.7;
+}
+
+/* ===========================
+NAVBAR
+=========================== */
+
+.ww-navbar{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(248,246,242,.92);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+.ww-container{
+max-width:1400px;
+margin:auto;
+height:90px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 40px;
+}
+
+.ww-logo{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.ww-logo-mark{
+width:54px;
+height:54px;
+border-radius:50%;
+background:#0d3b2e;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:900;
+font-size:22px;
+}
+
+.ww-logo-text{
+display:flex;
+flex-direction:column;
+font-weight:900;
+line-height:.88;
+letter-spacing:-1px;
+}
+
+.ww-nav-links{
+display:flex;
+gap:42px;
+}
+
+.ww-nav-links a{
+font-weight:600;
+transition:.25s;
+}
+
+.ww-nav-links a:hover{
+color:#c8a45a;
+}
+
+.ww-enter-button{
+padding:16px 30px;
+border-radius:999px;
+background:#c8a45a;
+font-weight:700;
+transition:.25s;
+}
+
+.ww-enter-button:hover{
+transform:translateY(-2px);
+}
+
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+display:grid;
+grid-template-columns:.9fr 1.1fr;
+align-items:center;
+gap:90px;
+min-height:850px;
+background:
+radial-gradient(circle at 78% 25%,rgba(200,164,90,.18),transparent 28%),
+linear-gradient(135deg,#040505 0%,#081b15 40%,#0d3b2e 100%);
+padding:100px 80px;
+}
+
+.hero-content{
+color:#fff;
+max-width:620px;
+}
+
+.hero-rating{
+display:inline-block;
+padding:12px 20px;
+border-radius:999px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+color:#c8a45a;
+font-weight:700;
+margin-bottom:30px;
+}
+
+.hero-content h1{
+font-family:Georgia,serif;
+font-size:96px;
+line-height:.9;
+letter-spacing:-4px;
+margin-bottom:28px;
+}
+
+.hero-content p{
+font-size:22px;
+line-height:1.7;
+color:rgba(255,255,255,.78);
+margin-bottom:36px;
+}
+
+.hero-buttons{
+display:flex;
+align-items:center;
+gap:24px;
+}
+
+.hero-primary{
+padding:18px 34px;
+background:#c8a45a;
+border-radius:999px;
+font-weight:700;
+color:#111;
+}
+
+.hero-buttons span{
+color:rgba(255,255,255,.6);
+}
+
+.hero-image{
+position:relative;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:760px;
+border-radius:36px;
+box-shadow:0 40px 120px rgba(0,0,0,.55);
+}
+
+.hero-card{
+position:absolute;
+left:-20px;
+bottom:-30px;
+background:rgba(15,15,15,.72);
+backdrop-filter:blur(18px);
+padding:28px;
+border-radius:24px;
+width:320px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.hero-card small{
+display:block;
+color:#c8a45a;
+letter-spacing:2px;
+margin-bottom:8px;
+}
+
+.hero-card h3{
+font-family:Georgia,serif;
+font-size:30px;
+color:#fff;
+margin-bottom:8px;
+}
+
+.hero-card p{
+color:#d5d5d5;
+margin-bottom:24px;
+}
+
+.hero-card-row{
+display:flex;
+justify-content:space-between;
+padding-top:18px;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.hero-card-row strong{
+display:block;
+font-size:26px;
+color:#fff;
+}
+
+.hero-card-row span{
+font-size:13px;
+color:#999;
+display:block;
+margin-top:6px;
+}
+
+/* ===========================
+STATS
+=========================== */
+
+.stats{
+background:#fff;
+padding:70px 80px;
+}
+
+.stats-container{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+text-align:center;
+}
+
+.stat h2{
+font-family:Georgia,serif;
+font-size:54px;
+color:#0d3b2e;
+margin-bottom:10px;
+}
+
+.stat p{
+color:#666;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+}
+
+/* ===========================
+HOW IT WORKS
+=========================== */
+
+.how{
+background:#f8f6f2;
+}
+
+.steps{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:32px;
+}
+
+.step-card{
+background:#fff;
+padding:40px;
+border-radius:28px;
+box-shadow:0 20px 60px rgba(0,0,0,.05);
+}
+
+.step-number{
+display:inline-flex;
+width:52px;
+height:52px;
+border-radius:50%;
+background:#0d3b2e;
+color:#fff;
+align-items:center;
+justify-content:center;
+font-weight:700;
+margin-bottom:24px;
+}
+
+.step-card h3{
+font-family:Georgia,serif;
+font-size:32px;
+margin-bottom:18px;
+}
+
+.step-card p{
+line-height:1.7;
+color:#666;
+}
