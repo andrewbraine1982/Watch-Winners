@@ -27,11 +27,12 @@ export default function Home() {
         </div>
 
         <div className={styles.heroCard}>
-          <div>
-            <p>Hero image</p>
-            <small>public{currentDraw.image}</small>
-          </div>
-        </div>
+  <img
+    src="/images/watches/hero-watch.jpg"
+    alt="Rolex"
+    className={styles.heroImage}
+  />
+</div>
       </section>
 
       <section className={styles.stats}>
