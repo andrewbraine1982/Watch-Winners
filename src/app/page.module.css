@@ -163,7 +163,7 @@
   letter-spacing: -2px;
 }
 
-blockquote {
+.winnerText blockquote {
   font-family: Georgia, serif;
   font-size: 28px;
   line-height: 1.45;
