@@ -1,14 +1,30 @@
-.main {
+.page {
+  background: #f8f6f2;
+  color: #171717;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(circle at top, #173b2f 0%, #000 70%);
 }
 
-.title {
-  color: white;
-  font-size: 5rem;
-  font-weight: 700;
-  font-family: Arial, sans-serif;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 0.9;
+}
+
+.logo span {
+  display: block;
+}
+
+.navButton {
+  background: #c8a45a;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
 }
