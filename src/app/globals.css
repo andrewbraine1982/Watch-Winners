@@ -352,3 +352,334 @@ margin-bottom:18px;
 line-height:1.7;
 color:#666;
 }
+/* ===========================
+COMPETITIONS
+=========================== */
+
+.competitions{
+background:#ffffff;
+}
+
+.competition-grid{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:34px;
+}
+
+.competition-card{
+background:#fff;
+border-radius:28px;
+overflow:hidden;
+box-shadow:0 22px 70px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.competition-card:hover{
+transform:translateY(-8px);
+}
+
+.competition-card img{
+width:100%;
+height:340px;
+object-fit:cover;
+}
+
+.competition-content{
+padding:28px;
+}
+
+.competition-content h3{
+font-family:Georgia,serif;
+font-size:34px;
+margin-bottom:8px;
+}
+
+.competition-content p{
+color:#777;
+margin-bottom:22px;
+}
+
+.progress{
+height:8px;
+background:#ece5d8;
+border-radius:999px;
+overflow:hidden;
+margin-bottom:24px;
+}
+
+.progress div{
+height:100%;
+background:#0d3b2e;
+}
+
+.competition-footer{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.competition-footer strong{
+font-size:24px;
+}
+
+.competition-footer button{
+border:none;
+background:#c8a45a;
+padding:14px 22px;
+border-radius:999px;
+font-weight:700;
+}
+
+/* ===========================
+WINNERS
+=========================== */
+
+.winners{
+background:#f8f6f2;
+}
+
+.winner-grid{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:34px;
+}
+
+.winner-card{
+background:#fff;
+border-radius:28px;
+overflow:hidden;
+box-shadow:0 18px 60px rgba(0,0,0,.06);
+}
+
+.winner-card img{
+width:100%;
+height:340px;
+object-fit:cover;
+background:#e9e9e9;
+}
+
+.winner-content{
+padding:28px;
+}
+
+.winner-content h3{
+font-family:Georgia,serif;
+font-size:30px;
+margin-bottom:8px;
+}
+
+.winner-content small{
+display:block;
+margin-bottom:18px;
+color:#b08c3d;
+font-weight:700;
+}
+
+.winner-content p{
+line-height:1.7;
+color:#666;
+}
+
+/* ===========================
+TRUST
+=========================== */
+
+.trust{
+background:#0d3b2e;
+color:#fff;
+}
+
+.trust .section-header h2{
+color:#fff;
+}
+
+.trust .section-header p{
+color:rgba(255,255,255,.75);
+}
+
+.trust-grid{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:26px;
+}
+
+.trust-card{
+padding:36px;
+border-radius:24px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.trust-icon{
+width:54px;
+height:54px;
+border-radius:50%;
+background:#c8a45a;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#111;
+font-weight:700;
+margin-bottom:22px;
+}
+
+.trust-card h3{
+margin-bottom:14px;
+font-size:24px;
+}
+
+.trust-card p{
+color:rgba(255,255,255,.72);
+line-height:1.7;
+}
+
+/* ===========================
+FAQ
+=========================== */
+
+.faq{
+background:#fff;
+}
+
+.faq-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:24px;
+}
+
+.faq-card{
+padding:34px;
+background:#f8f6f2;
+border-radius:24px;
+}
+
+.faq-card h3{
+font-size:24px;
+margin-bottom:14px;
+font-family:Georgia,serif;
+}
+
+.faq-card p{
+color:#666;
+line-height:1.7;
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+.footer{
+background:#050505;
+color:#fff;
+padding:90px 80px 40px;
+}
+
+.footer-top{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1fr;
+gap:50px;
+padding-bottom:50px;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.footer h3,
+.footer h4{
+margin-bottom:18px;
+font-family:Georgia,serif;
+}
+
+.footer p{
+color:#9d9d9d;
+line-height:1.8;
+}
+
+.footer a{
+display:block;
+margin-bottom:12px;
+color:#bdbdbd;
+}
+
+.footer a:hover{
+color:#fff;
+}
+
+.footer-bottom{
+max-width:1400px;
+margin:35px auto 0;
+text-align:center;
+color:#8b8b8b;
+}
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media (max-width:1100px){
+
+section{
+padding:70px 24px;
+}
+
+.ww-container{
+padding:0 24px;
+}
+
+.ww-nav-links{
+display:none;
+}
+
+.hero{
+grid-template-columns:1fr;
+padding:70px 24px;
+}
+
+.hero-content h1{
+font-size:64px;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.hero-image img{
+max-width:100%;
+}
+
+.hero-card{
+position:relative;
+left:auto;
+bottom:auto;
+width:100%;
+margin-top:20px;
+}
+
+.stats-container,
+.steps,
+.competition-grid,
+.winner-grid,
+.trust-grid,
+.faq-grid,
+.footer-top{
+grid-template-columns:1fr;
+}
+
+.section-header h2{
+font-size:46px;
+}
+
+.footer{
+padding:70px 24px 40px;
+}
+
+}
