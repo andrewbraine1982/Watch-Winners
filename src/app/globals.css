@@ -97,6 +97,11 @@ display:flex;
 align-items:center;
 gap:18px;
 }
+.ww-logo-image{
+  height:64px;
+  width:auto;
+  display:block;
+}
 
 .ww-logo-mark{
 width:54px;
