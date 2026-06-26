@@ -8,15 +8,12 @@ import Trust from "../components/Trust";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 
-import "./page.module.css";
-
 export default function Home() {
   return (
     <>
       <Navbar />
 
       <main>
-
         <Hero />
 
         <Stats />
@@ -30,7 +27,6 @@ export default function Home() {
         <Trust />
 
         <Faq />
-
       </main>
 
       <Footer />
