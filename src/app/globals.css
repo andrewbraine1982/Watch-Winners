@@ -1062,3 +1062,23 @@ padding:70px 24px 40px;
     0 28px 70px rgba(201,162,77,.55),
     0 0 42px rgba(201,162,77,.32);
 }
+/* Premium Navbar CTA */
+
+.ww-nav-cta{
+  background:#d4af4f;
+  color:#111;
+  padding:14px 34px;
+  border-radius:999px;
+  font-weight:700;
+  text-decoration:none;
+  transition:all .35s ease;
+  box-shadow:0 8px 22px rgba(212,175,79,.18);
+}
+
+.ww-nav-cta:hover{
+  background:#dfbb5a;
+  transform:translateY(-2px);
+  box-shadow:
+      0 16px 40px rgba(212,175,79,.40),
+      0 0 30px rgba(212,175,79,.25);
+}
