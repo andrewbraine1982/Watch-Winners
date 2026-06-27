@@ -1310,6 +1310,13 @@ grid-template-columns:1fr;
   max-height:54px;
   max-width:190px;
   object-fit:contain;
+  filter: brightness(0) invert(1);
+  opacity: .75;
+  transition: filter .35s ease, opacity .35s ease;
+}
+.brand-logo-item:hover img{
+  filter:none;
+  opacity:1;
 }
 
 @keyframes brandScroll{
