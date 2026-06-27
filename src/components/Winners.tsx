@@ -1,25 +1,25 @@
 const winners = [
   {
-    name: "Bradley S.",
-    town: "Leeds",
-    watch: "Rolex GMT-Master II",
-    image: "/images/winners/bradley.jpg",
+   name: "Raj S.",
+town: "Leeds",
+watch: "Rolex Datejust",
+   image: "/images/winners/winner1.avif",
     quote:
       "I genuinely thought it was a prank until the Rolex arrived the next morning.",
   },
   {
-    name: "James M.",
-    town: "Manchester",
-    watch: "Rolex Submariner",
-    image: "/images/winners/james.jpg",
+ name: "Michael H.",
+town: "Manchester",
+watch: "Rolex Daytona",
+   image: "/images/winners/winner2.jpg",
     quote:
       "Everything was transparent from start to finish. I still can't believe I won.",
   },
   {
-    name: "Oliver T.",
-    town: "Bristol",
-    watch: "Rolex Datejust",
-    image: "/images/winners/oliver.jpg",
+  name: "Stephen R.",
+town: "Bristol",
+watch: "Rolex GMT-Master II Pepsi",
+   image: "/images/winners/winner3.jpg",
     quote:
       "The live draw gave me complete confidence. Brilliant company.",
   },
