@@ -938,38 +938,62 @@ padding:70px 24px 40px;
 }
 
 .hero-rating-premium{
-  gap:14px;
+    display:flex;
+    align-items:center;
+    gap:22px;
+
+    padding:18px 26px;
+
+    width:fit-content;
+
+    border-radius:999px;
+
+    background:rgba(18,20,18,.92);
+
+    border:1px solid rgba(255,255,255,.08);
 }
 
 .trust-stars{
-  display:flex;
-  gap:3px;
+    display:flex;
+    gap:3px;
 }
 
 .trust-stars span{
-  width:26px;
-  height:26px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#00b67a;
-  color:#fff;
-  font-size:16px;
-  line-height:1;
-  border-radius:2px;
+    width:34px;
+    height:34px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#00b67a;
+
+    color:white;
+
+    border-radius:3px;
+
+    font-size:19px;
+
+    font-weight:700;
 }
 
-.hero-rating-premium strong{
-  color:#f6f3ec;
+.trust-copy{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
 }
 
-.hero-rating-premium em{
-  font-style:normal;
-  color:rgba(246,243,236,.72);
+.trust-copy strong{
+    color:white;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.1;
 }
 
-.hero-rating-premium b{
-  color:#f6f3ec;
+.trust-copy small{
+    color:#d5d5d5;
+    font-size:15px;
+    line-height:1.2;
 }
 
 .hero-primary:hover{
