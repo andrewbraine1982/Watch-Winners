@@ -877,3 +877,43 @@ padding:70px 24px 40px;
 }
 
 }
+.hero-countdown{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-top:28px;
+  color:#f6f3ec;
+}
+
+.hero-countdown > span{
+  color:rgba(246,243,236,.62);
+  font-weight:800;
+  margin-right:6px;
+}
+
+.hero-countdown div{
+  min-width:74px;
+  padding:12px 14px;
+  border-radius:16px;
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.1);
+  text-align:center;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.hero-countdown strong{
+  display:block;
+  font-size:28px;
+  line-height:1;
+  color:#c9a24d;
+}
+
+.hero-countdown small{
+  display:block;
+  margin-top:6px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:rgba(246,243,236,.58);
+  font-weight:800;
+}
