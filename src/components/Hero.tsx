@@ -5,14 +5,12 @@ import { useEffect, useState } from "react";
 function getNextSunday8pm() {
   const now = new Date();
   const target = new Date(now);
-
   const daysUntilSunday = (7 - now.getDay()) % 7;
+
   target.setDate(now.getDate() + daysUntilSunday);
   target.setHours(20, 0, 0, 0);
 
-  if (target <= now) {
-    target.setDate(target.getDate() + 7);
-  }
+  if (target <= now) target.setDate(target.getDate() + 7);
 
   return target;
 }
@@ -28,19 +26,14 @@ export default function Hero() {
   useEffect(() => {
     const updateCountdown = () => {
       const target = getNextSunday8pm().getTime();
-      const now = new Date().getTime();
+      const now = Date.now();
       const distance = target - now;
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((distance / (1000 * 60)) % 60);
-      const seconds = Math.floor((distance / 1000) % 60);
-
       setTimeLeft({
-        days: String(days).padStart(2, "0"),
-        hours: String(hours).padStart(2, "0"),
-        minutes: String(minutes).padStart(2, "0"),
-        seconds: String(seconds).padStart(2, "0"),
+        days: String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, "0"),
+        hours: String(Math.floor((distance / (1000 * 60 * 60)) % 24)).padStart(2, "0"),
+        minutes: String(Math.floor((distance / (1000 * 60)) % 60)).padStart(2, "0"),
+        seconds: String(Math.floor((distance / 1000) % 60)).padStart(2, "0"),
       });
     };
 
@@ -55,7 +48,19 @@ export default function Hero() {
       <div className="hero-bg-mark">WATCH WINNERS</div>
 
       <div className="hero-content">
-        <p className="hero-rating">★ Rated Excellent · 4.9/5 Trustpilot</p>
+        <div className="hero-rating hero-rating-premium">
+          <span className="trust-stars">
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+          </span>
+
+          <strong>Rated Excellent</strong>
+          <em>4,500+ 5 Star Reviews</em>
+          <b>Trustpilot</b>
+        </div>
 
         <h1>
           Win the
@@ -85,22 +90,22 @@ export default function Hero() {
         <div className="hero-countdown">
           <span>Next live draw</span>
 
-          <div>
+          <div className="countdown-box">
             <strong>{timeLeft.days}</strong>
             <small>Days</small>
           </div>
 
-          <div>
+          <div className="countdown-box">
             <strong>{timeLeft.hours}</strong>
             <small>Hours</small>
           </div>
 
-          <div>
+          <div className="countdown-box">
             <strong>{timeLeft.minutes}</strong>
             <small>Mins</small>
           </div>
 
-          <div>
+          <div className="countdown-box pulse">
             <strong>{timeLeft.seconds}</strong>
             <small>Secs</small>
           </div>
@@ -108,10 +113,6 @@ export default function Hero() {
       </div>
 
       <div className="hero-showcase">
-        <div className="hero-logo-stamp">
-          <img src="/logo.png" alt="Watch Winners" />
-        </div>
-
         <div className="hero-watch-wrap">
           <img
             src="/images/watches/hero-watch.jpg"
