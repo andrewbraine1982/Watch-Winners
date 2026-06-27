@@ -1235,3 +1235,110 @@ grid-template-columns:1fr;
 }
 
 }
+/* ===== Brand Logo Marquee ===== */
+
+.brand-marquee-section{
+  background:#071812;
+  padding:46px 0 52px;
+  overflow:hidden;
+  border-top:1px solid rgba(212,175,79,.16);
+  border-bottom:1px solid rgba(212,175,79,.12);
+}
+
+.brand-marquee-label{
+  text-align:center;
+  color:rgba(255,255,255,.62);
+  font-size:13px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  margin-bottom:34px;
+}
+
+.brand-marquee{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+
+.brand-marquee::before,
+.brand-marquee::after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:180px;
+  height:100%;
+  z-index:2;
+  pointer-events:none;
+}
+
+.brand-marquee::before{
+  left:0;
+  background:linear-gradient(90deg,#071812,transparent);
+}
+
+.brand-marquee::after{
+  right:0;
+  background:linear-gradient(270deg,#071812,transparent);
+}
+
+.brand-marquee-track{
+  display:flex;
+  align-items:center;
+  gap:80px;
+  width:max-content;
+  animation:brandScroll 34s linear infinite;
+}
+
+.brand-logo-item{
+  height:54px;
+  min-width:180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:.62;
+  filter:grayscale(1) brightness(1.7);
+  transition:.35s ease;
+}
+
+.brand-logo-item:hover{
+  opacity:1;
+  filter:grayscale(0) brightness(1.15);
+  transform:translateY(-2px);
+}
+
+.brand-logo-item img{
+  max-height:54px;
+  max-width:190px;
+  object-fit:contain;
+}
+
+@keyframes brandScroll{
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-50%);
+  }
+}
+
+@media(max-width:700px){
+  .brand-marquee-section{
+    padding:36px 0 42px;
+  }
+
+  .brand-marquee-track{
+    gap:48px;
+    animation-duration:26s;
+  }
+
+  .brand-logo-item{
+    min-width:140px;
+    height:42px;
+  }
+
+  .brand-logo-item img{
+    max-height:42px;
+    max-width:150px;
+  }
+}
