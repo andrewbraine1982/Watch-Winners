@@ -1,11 +1,11 @@
 const brands = [
-  { name: "Rolex", src: "/images/Rolex.png" },
-  { name: "Audemars Piguet", src: "/images/Audemars Piguet.png" },
-  { name: "Patek Philippe", src: "/images/Patek.png" },
-  { name: "Omega", src: "/images/omega.png" },
-  { name: "Cartier", src: "/images/Cartier.png" },
-  { name: "Richard Mille", src: "/images/Richard mille.png" },
-  { name: "Vacheron Constantin", src: "/images/Vacheron.png" },
+  { name: "Rolex", src: "/Rolex.png" },
+  { name: "Audemars Piguet", src: "/Audemars Piguet.png" },
+  { name: "Patek Philippe", src: "/Patek.png" },
+  { name: "Omega", src: "/omega.png" },
+  { name: "Cartier", src: "/Cartier.png" },
+  { name: "Richard Mille", src: "/Richard mille.png" },
+  { name: "Vacheron Constantin", src: "/Vacheron.png" },
 ];
 
 export default function BrandMarquee() {
