@@ -131,12 +131,16 @@ gap:42px;
 }
 
 .ww-nav-links a{
-font-weight:600;
-transition:.25s;
+    font-size:17px;
+    font-weight:600;
+    letter-spacing:.45px;
+    color:#171717;
+    text-decoration:none;
+    transition:all .25s ease;
 }
 
 .ww-nav-links a:hover{
-color:#c8a45a;
+    color:#c7a23a;
 }
 
 .ww-enter-button{
