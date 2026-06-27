@@ -66,10 +66,9 @@ export default function Competitions() {
                 <strong>
                   From {watch.price}
                 </strong>
-
-                <button>
-                  Enter Now
-                </button>
+<button className="ww-nav-cta">
+  Enter Now
+</button>
               </div>
             </div>
           </article>
