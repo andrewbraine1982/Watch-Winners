@@ -76,9 +76,12 @@ export default function Stats() {
         </div>
 
         <div className="stat-card">
-          <Counter end={49} suffix="★" />
-          <p>TRUSTPILOT</p>
-        </div>
+  <div className="stats-number">
+    <Counter end={49} />
+    <span className="stats-decimal">.9★</span>
+  </div>
+  <p>TRUSTPILOT</p>
+</div>
 
       </div>
     </section>
