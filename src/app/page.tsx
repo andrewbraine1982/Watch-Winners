@@ -7,7 +7,7 @@ import Winners from "../components/Winners";
 import Trust from "../components/Trust";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
-
+import BrandMarquee from "../components/BrandMarquee";
 export default function Home() {
   return (
     <>
@@ -15,6 +15,7 @@ export default function Home() {
 
       <main>
         <Hero />
+        <BrandMarquee />
 
         <Stats />
 
