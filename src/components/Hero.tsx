@@ -84,7 +84,7 @@ export default function Hero() {
         </p>
 
         <div className="hero-buttons">
-        <a href="#competitions" className="hero-primary nav-cta">
+        <a href="#competitions" className="hero-primary ww-nav-cta">
             Enter Now
           </a>
 
