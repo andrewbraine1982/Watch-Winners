@@ -1,10 +1,10 @@
 const brands = [
   { name: "Rolex", src: "/images/brands/Rolex.png" },
-  { name: "Audemars Piguet", src: "/images/brands/Audemars Piguet.png" },
+{ name: "Audemars Piguet", src: "/images/brands/Audemars%20Piguet.png" },
   { name: "Patek Philippe", src: "/images/brands/Patek.png" },
   { name: "Omega", src: "/images/brands/omega.png" },
   { name: "Cartier", src: "/images/brands/Cartier.png" },
-  { name: "Richard Mille", src: "/images/brands/Richard mille.png" },
+ { name: "Richard Mille", src: "/images/brands/Richard%20mille.png" },
   { name: "Vacheron Constantin", src: "/images/brands/Vacheron.png" },
 ];
 
