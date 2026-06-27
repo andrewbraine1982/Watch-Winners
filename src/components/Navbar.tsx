@@ -18,9 +18,12 @@ export default function Navbar() {
           <a href="#faq">FAQ</a>
         </nav>
 
-        <a href="#competitions" className="ww-enter-button">
-          Enter Now
-        </a>
+        <a
+  href="#competitions"
+  className="ww-nav-cta"
+>
+  Enter Now
+</a>
       </div>
     </header>
   );
