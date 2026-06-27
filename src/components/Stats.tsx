@@ -49,7 +49,7 @@ function Counter({
   return (
     <div ref={ref} className="stats-number">
       {prefix}
-      {count.toLocaleString()}
+  {end === 49 ? (count / 10).toFixed(1) : count.toLocaleString()}
       {suffix}
     </div>
   );
