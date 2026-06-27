@@ -1018,3 +1018,47 @@ padding:70px 24px 40px;
     transform:scale(1.035);
   }
 }
+/* FINAL HERO REFINEMENTS */
+
+.hero-rating-premium{
+  padding:14px 22px;
+  gap:16px;
+}
+
+.trust-stars span{
+  width:30px;
+  height:30px;
+  font-size:18px;
+}
+
+.hero-rating-premium em{
+  font-size:15px;
+}
+
+.ww-nav-links{
+  gap:48px;
+}
+
+.ww-nav-links a{
+  font-family:Inter, Arial, sans-serif;
+  font-size:16px;
+  font-weight:600;
+  letter-spacing:.65px;
+}
+
+.hero-watch{
+  object-position:center;
+  transform:scale(1.06);
+}
+
+.hero-prize-card{
+  background:linear-gradient(145deg,rgba(5,12,9,.96),rgba(14,14,14,.9));
+}
+
+.hero-primary:hover{
+  background:#d8b75f;
+  transform:translateY(-3px);
+  box-shadow:
+    0 28px 70px rgba(201,162,77,.55),
+    0 0 42px rgba(201,162,77,.32);
+}
