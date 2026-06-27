@@ -1151,7 +1151,7 @@ justify-content: center;
         transparent 100%
     );
 
-    animation:navShimmer 7s ease-in-out infinite;
+    animation:navShimmer 4s ease-in-out infinite;
     pointer-events:none;
 }
 @keyframes navShimmer{
