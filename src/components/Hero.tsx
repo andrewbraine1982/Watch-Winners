@@ -121,7 +121,7 @@ export default function Hero() {
       <div className="hero-showcase">
         <div className="hero-watch-wrap">
           <img
-            src="/images/watches/hero-watch.jpg"
+    src="/images/watches/hero-watch.avif"
             alt="Rolex GMT-Master II"
             className="hero-watch"
           />
