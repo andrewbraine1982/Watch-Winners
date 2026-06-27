@@ -917,3 +917,104 @@ padding:70px 24px 40px;
   color:rgba(246,243,236,.58);
   font-weight:800;
 }
+/* PREMIUM HERO POLISH */
+
+.ww-navbar{
+  box-shadow:0 8px 34px rgba(0,0,0,.06);
+}
+
+.ww-nav-links a{
+  font-weight:600;
+  letter-spacing:.45px;
+}
+
+.ww-nav-links a:hover{
+  color:#c9a24d;
+  transform:translateY(-1px);
+}
+
+.hero{
+  padding-top:155px;
+}
+
+.hero-rating-premium{
+  gap:14px;
+}
+
+.trust-stars{
+  display:flex;
+  gap:3px;
+}
+
+.trust-stars span{
+  width:26px;
+  height:26px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#00b67a;
+  color:#fff;
+  font-size:16px;
+  line-height:1;
+  border-radius:2px;
+}
+
+.hero-rating-premium strong{
+  color:#f6f3ec;
+}
+
+.hero-rating-premium em{
+  font-style:normal;
+  color:rgba(246,243,236,.72);
+}
+
+.hero-rating-premium b{
+  color:#f6f3ec;
+}
+
+.hero-primary:hover{
+  box-shadow:
+    0 24px 60px rgba(201,162,77,.48),
+    0 0 34px rgba(201,162,77,.28);
+}
+
+.hero-prize-card{
+  animation:prizeFloat 6s ease-in-out infinite;
+}
+
+.countdown-box{
+  animation:countFade .9s ease;
+}
+
+.countdown-box.pulse{
+  animation:countPulse 1s ease-in-out infinite;
+}
+
+@keyframes prizeFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-6px);
+  }
+}
+
+@keyframes countFade{
+  from{
+    opacity:.7;
+    transform:scale(.96);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes countPulse{
+  0%,100%{
+    transform:scale(1);
+  }
+  50%{
+    transform:scale(1.035);
+  }
+}
