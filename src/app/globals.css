@@ -579,13 +579,17 @@ gap:34px;
 
 .competition-card:hover{
   transform:translateY(-10px);
-  box-shadow:0 34px 90px rgba(0,0,0,.14);
+ .competition-card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    transform:scale(1.03);
+    transition:transform .45s ease;
 }
-.competition-card img{
-width:100%;
-height:340px;
-object-fit:cover;
+.competition-card:hover img{
+    transform:scale(1.08);
 }
+
 
 .competition-content{
 padding:28px;
