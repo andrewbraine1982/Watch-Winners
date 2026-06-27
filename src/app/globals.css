@@ -1021,15 +1021,32 @@ padding:70px 24px 40px;
 /* FINAL HERO REFINEMENTS */
 
 .hero-rating-premium{
-  padding:14px 22px;
-  gap:16px;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  padding:16px 26px;
+  border-radius:999px;
+  background:rgba(18,20,18,.92);
+  border:1px solid rgba(255,255,255,.08);
+  width:fit-content;
 }
 
-.trust-stars span{
-  width:30px;
-  height:30px;
+.hero-rating-premium em{
+  font-style:normal;
+  color:#d5d5d5;
   font-size:18px;
 }
+.hero-rating-premium strong{
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+}
+
+.hero-rating-premium span:last-child{
+    color:#bfbfbf;
+    font-size:18px;
+}
+
 
 .hero-rating-premium em{
   font-size:15px;
