@@ -1,86 +1,27 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-
-function Counter({
-  end,
-  prefix = "",
-  suffix = "",
-  duration = 1800,
-}: {
-  end: number;
-  prefix?: string;
-  suffix?: string;
-  duration?: number;
-}) {
-  const [count, setCount] = useState(0);
-  const ref = useRef<HTMLDivElement>(null);
-  const started = useRef(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting || started.current) return;
-
-        started.current = true;
-
-        let start = 0;
-        const increment = end / (duration / 16);
-
-        const timer = setInterval(() => {
-          start += increment;
-
-          if (start >= end) {
-            setCount(end);
-            clearInterval(timer);
-          } else {
-            setCount(Math.floor(start));
-          }
-        }, 16);
-      },
-      { threshold: 0.4 }
-    );
-
-    if (ref.current) observer.observe(ref.current);
-
-    return () => observer.disconnect();
-  }, [end, duration]);
-
+export default function Navbar() {
   return (
-    <div ref={ref} className="stats-number">
-      {prefix}
-      {count.toLocaleString()}
-      {suffix}
-    </div>
-  );
-}
+    <header className="ww-navbar">
+      <div className="ww-container">
+        <a href="/" className="ww-logo">
+          <img
+            src="/logo.png"
+            alt="Watch Winners"
+            className="ww-logo-image"
+          />
+        </a>
 
-export default function Stats() {
-  return (
-    <section className="stats-section">
-      <div className="stats-grid">
+        <nav className="ww-nav-links">
+          <a href="#competitions">Competitions</a>
+          <a href="#how">How it Works</a>
+          <a href="#winners">Winners</a>
+          <a href="#trust">Trust</a>
+          <a href="#faq">FAQ</a>
+        </nav>
 
-        <div className="stat-card">
-          <Counter end={24} prefix="£" suffix="M+" />
-          <p>PRIZES AWARDED</p>
-        </div>
-
-        <div className="stat-card">
-          <Counter end={8700} suffix="+" />
-          <p>VERIFIED WINNERS</p>
-        </div>
-
-        <div className="stat-card">
-          <Counter end={100} suffix="%" />
-          <p>LIVE DRAWS</p>
-        </div>
-
-        <div className="stat-card">
-          <Counter end={49} suffix="★" />
-          <p>TRUSTPILOT</p>
-        </div>
-
+        <a href="#competitions" className="ww-nav-cta">
+          Enter Now
+        </a>
       </div>
-    </section>
+    </header>
   );
 }
