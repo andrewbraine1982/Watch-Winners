@@ -76,11 +76,8 @@ export default function Stats() {
         </div>
 
         <div className="stat-card">
-  <div className="stats-number">
-    <Counter end={4} />
-    <span className="stats-decimal">.9★</span>
-  </div>
-  <p>TRUSTPILOT</p>
+  <div className="stats-number">4.9★</div>
+<p>TRUSTPILOT</p>
 </div>
 
       </div>
