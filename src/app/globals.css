@@ -1093,7 +1093,7 @@ padding:70px 24px 40px;
 
 .hero-watch{
   object-position:center;
-  transform:scale(1.06);
+  transform:translateX(40px) scale(1.20);
 }
 
 .hero-prize-card{
