@@ -324,8 +324,10 @@ left:12%;
 right:12%;
 bottom:-34px;
 height:58px;
-background:radial-gradient(ellipse at center,rgba(0,0,0,.62),transparent 70%);
-filter:blur(8px);
+background:
+  radial-gradient(ellipse at center, rgba(201,162,77,.18), transparent 62%),
+  radial-gradient(ellipse at center, rgba(0,70,45,.36), transparent 72%);
+filter:blur(18px);
 z-index:-1;
 animation:shadowPulse 7s ease-in-out infinite;
 }
