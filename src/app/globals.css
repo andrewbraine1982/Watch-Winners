@@ -1110,6 +1110,11 @@ padding:70px 24px 40px;
 /* Premium Navbar CTA */
 
 .ww-nav-cta{
+   position: relative;
+overflow: hidden;
+display: inline-flex;
+align-items: center;
+justify-content: center;
   background:#d4af4f;
   color:#111;
   padding:14px 34px;
@@ -1121,9 +1126,46 @@ padding:70px 24px 40px;
 }
 
 .ww-nav-cta:hover{
+
   background:#dfbb5a;
   transform:translateY(-2px);
   box-shadow:
       0 16px 40px rgba(212,175,79,.40),
       0 0 30px rgba(212,175,79,.25);
+}
+.ww-nav-cta::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-160%;
+    width:90%;
+    height:100%;
+    transform:skewX(-22deg);
+
+    background:linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,255,255,.05) 25%,
+        rgba(255,255,255,.75) 50%,
+        rgba(255,255,255,.05) 75%,
+        transparent 100%
+    );
+
+    animation:navShimmer 7s ease-in-out infinite;
+    pointer-events:none;
+}
+@keyframes navShimmer{
+
+    0%{
+        left:-180%;
+    }
+
+    80%{
+        left:-180%;
+    }
+
+    100%{
+        left:180%;
+    }
+
 }
