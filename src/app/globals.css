@@ -651,7 +651,12 @@ WINNERS
 =========================== */
 
 .winners{
-background:#f8f6f2;
+    background:
+        radial-gradient(circle at top center, rgba(201,162,77,.12), transparent 45%),
+        linear-gradient(180deg, #0b0c0d 0%, #111315 100%);
+    padding:100px 24px;
+    position:relative;
+    overflow:hidden;
 }
 
 .winner-grid{
