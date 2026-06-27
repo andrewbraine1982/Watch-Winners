@@ -702,6 +702,20 @@ font-weight:700;
 line-height:1.7;
 color:#666;
 }
+/* Premium Winners Header */
+.winners .section-header span{
+    color:#d4af4f;
+    letter-spacing:4px;
+}
+
+.winners .section-header h2{
+    color:#f4f1ea;
+    text-shadow:0 8px 30px rgba(0,0,0,.45);
+}
+
+.winners .section-header{
+    margin-bottom:70px;
+}
 
 /* ===========================
 TRUST
