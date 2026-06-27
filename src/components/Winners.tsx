@@ -47,10 +47,16 @@ export default function Winners() {
             key={winner.name}
             className="winner-card"
           >
-            <img
-              src={winner.image}
-              alt={winner.name}
-            />
+          <div className="winner-image">
+    <img
+        src={winner.image}
+        alt={winner.name}
+    />
+
+    <div className="winner-badge">
+        ✓ VERIFIED WINNER
+    </div>
+</div>
 
             <div className="winner-content">
               <h3>{winner.name}</h3>
