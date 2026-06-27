@@ -578,8 +578,14 @@ gap:34px;
 }
 
 .competition-card:hover{
-  transform:translateY(-10px);
-   }
+    transform:translateY(-10px);
+    box-shadow:0 34px 90px rgba(0,0,0,.14);
+}
+
+.competition-card:hover .competition-content h3{
+    color:#d4af4f;
+}
+   
  .competition-card img{
     width:100%;
     height:340px;
@@ -597,9 +603,11 @@ padding:28px;
 }
 
 .competition-content h3{
-font-family:Georgia,serif;
-font-size:34px;
-margin-bottom:8px;
+    font-family:Georgia,serif;
+    font-size:34px;
+    margin-bottom:8px;
+    color:#181818;
+    transition:color .35s ease;
 }
 
 .competition-content p{
