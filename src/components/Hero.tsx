@@ -48,7 +48,7 @@ export default function Hero() {
       <div className="hero-bg-mark">WATCH WINNERS</div>
 
       <div className="hero-content">
-     <div className="hero-rating-premium">
+ <div className="hero-rating-premium">
 
   <div className="trust-stars">
     <span>★</span>
@@ -58,11 +58,13 @@ export default function Hero() {
     <span>★</span>
   </div>
 
-  <strong>Rated Excellent</strong>
+  <div className="trust-copy">
+    <strong>Rated Excellent</strong>
 
-  <em>4.9/5 Trustpilot</em>
+    <small>4.9/5 Trustpilot</small>
 
-  <span>4,500+ Reviews</span>
+    <small>4,500+ Reviews</small>
+  </div>
 
 </div>
 
