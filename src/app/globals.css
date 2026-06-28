@@ -1446,3 +1446,71 @@ grid-template-columns:1fr;
     max-width:150px;
   }
 }
+/* =========================================
+   COMPETITION PAGE
+========================================= */
+
+.competition-page{
+  background:#0b0c0d;
+  color:#fff;
+  min-height:100vh;
+  padding:140px 24px 100px;
+}
+
+.competition-hero{
+  max-width:1400px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:80px;
+  align-items:center;
+}
+
+.competition-left{
+  aspect-ratio:1;
+  border-radius:32px;
+  background:#17181a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#666;
+  font-size:22px;
+}
+
+.competition-right h1{
+  font-family:Georgia,serif;
+  font-size:72px;
+  line-height:1;
+  margin:20px 0;
+}
+
+.competition-tag{
+  display:inline-block;
+  padding:10px 18px;
+  border-radius:999px;
+  background:#d4af4f;
+  color:#111;
+  font-weight:700;
+  letter-spacing:2px;
+  font-size:12px;
+}
+
+.competition-subtitle{
+  font-size:24px;
+  color:#c9c9c9;
+  line-height:1.6;
+  max-width:520px;
+}
+
+@media(max-width:1000px){
+
+.competition-hero{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.competition-right h1{
+font-size:52px;
+}
+
+}
