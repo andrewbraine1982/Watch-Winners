@@ -485,3 +485,42 @@
     opacity:.18;
 
 }
+/* ==========================================
+   GOLD DUST ANIMATION
+========================================== */
+
+.gold-dust::before{
+
+    animation:goldDust 26s linear infinite;
+
+    will-change:transform;
+
+}
+
+@keyframes goldDust{
+
+    0%{
+
+        transform:
+            translateY(0)
+            translateX(0);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-18px)
+            translateX(10px);
+
+    }
+
+    100%{
+
+        transform:
+            translateY(0)
+            translateX(0);
+
+    }
+
+}
