@@ -31,6 +31,40 @@ export default function CompetitionPage() {
         </div>
 
       </section>
+      <section className="entry-selector">
+
+  <h2>Choose Your Entries</h2>
+
+  <div className="entry-grid">
+
+    <div className="entry-card active">
+      <span className="entry-number">1</span>
+      <small>£14.99</small>
+    </div>
+
+    <div className="entry-card popular">
+      <span className="entry-badge">
+        MOST POPULAR
+      </span>
+
+      <span className="entry-number">5</span>
+
+      <small>£74.95</small>
+    </div>
+
+    <div className="entry-card premium">
+      <span className="entry-badge">
+        BEST VALUE
+      </span>
+
+      <span className="entry-number">10</span>
+
+      <small>£149.90</small>
+    </div>
+
+  </div>
+
+</section>
 
     </main>
   );
