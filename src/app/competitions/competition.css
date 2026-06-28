@@ -80,9 +80,8 @@
 
     position:absolute;
 
-    width:680px;
-
-    height:680px;
+  width:820px;
+height:820px;
 
     border-radius:50%;
 
@@ -102,7 +101,7 @@
 
         );
 
-    filter:blur(60px);
+  filter:blur(90px);
 
     z-index:-2;
 
