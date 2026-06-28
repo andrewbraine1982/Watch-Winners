@@ -1458,12 +1458,19 @@ grid-template-columns:1fr;
 }
 
 .competition-hero{
-  max-width:1400px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:80px;
-  align-items:center;
+
+max-width:1400px;
+
+margin:0 auto;
+
+display:grid;
+
+grid-template-columns:520px 1fr;
+
+gap:100px;
+
+align-items:start;
+
 }
 
 .competition-left{
