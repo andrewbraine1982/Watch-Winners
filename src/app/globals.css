@@ -1474,14 +1474,29 @@ align-items:start;
 }
 
 .competition-left{
-  aspect-ratio:1;
-  border-radius:32px;
-  background:#17181a;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#666;
-  font-size:22px;
+
+position:sticky;
+
+top:80px;
+
+align-self:start;
+
+aspect-ratio:1;
+
+border-radius:32px;
+
+background:#17181a;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:30px;
+
+overflow:hidden;
+
 }
 
 .competition-right h1{
@@ -1522,11 +1537,22 @@ font-size:52px;
 
 }
 .competition-watch{
-  width:88%;
-  max-width:700px;
-  object-fit:contain;
-  filter:drop-shadow(0 35px 70px rgba(212,175,79,.18));
-  transition:.5s ease;
+
+width:100%;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
+transition:transform .5s ease;
+
+}
+.competition-left:hover .competition-watch{
+
+transform:scale(1.02);
+
 }
 
 .competition-watch:hover{
