@@ -37,7 +37,25 @@ export default function CompetitionPage() {
         </div>
       </section>
 
-      <section className="entry-selector">
+     <section className="competition-configurator">
+
+<div className="config-left">
+
+  <div className="sticky-watch">
+
+    <img
+      src="/images/watches/RolexPepsi.png"
+      alt="Rolex GMT-Master II Pepsi"
+      className="competition-watch"
+    />
+
+  </div>
+
+</div>
+
+<div className="config-right">
+
+<section className="entry-selector">
         <h2>Choose Your Entries</h2>
         <div className="entry-progress">
 
@@ -121,6 +139,11 @@ export default function CompetitionPage() {
 
 </div>
       </section>
-    </main>
+
+</div>
+
+</section>
+
+</main>
   );
 }
