@@ -36,36 +36,42 @@ export default function CompetitionPage() {
       </section>
       <section className="entry-selector">
 
-  <h2>Choose Your Entries</h2>
+{[
+  { entries: 1, price: 14.99, badge: "" },
+  { entries: 5, price: 74.95, badge: "MOST POPULAR" },
+  { entries: 10, price: 149.90, badge: "BEST VALUE" },
+].map((ticket) => (
 
-  <div className="entry-grid">
+  <div
+    key={ticket.entries}
+    className={`entry-card ${
+      selectedEntries === ticket.entries ? "selected" : ""
+    }`}
+    onClick={() => setSelectedEntries(ticket.entries)}
+  >
 
-    <div className="entry-card active">
-      <span className="entry-number">1</span>
-      <small>£14.99</small>
-    </div>
-
-    <div className="entry-card popular">
+    {ticket.badge && (
       <span className="entry-badge">
-        MOST POPULAR
+        {ticket.badge}
       </span>
+    )}
 
-      <span className="entry-number">5</span>
+    <span className="entry-number">
+      {ticket.entries}
+    </span>
 
-      <small>£74.95</small>
-    </div>
-
-    <div className="entry-card premium">
-      <span className="entry-badge">
-        BEST VALUE
-      </span>
-
-      <span className="entry-number">10</span>
-
-      <small>£149.90</small>
-    </div>
+    <small>
+      £{ticket.price.toFixed(2)}
+    </small>
 
   </div>
+
+))}
+</div>        
+
+   
+
+ 
 
 </section>
 
