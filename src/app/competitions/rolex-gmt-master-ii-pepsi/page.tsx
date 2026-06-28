@@ -287,6 +287,8 @@ return (
         </div>
 
     </main>
+    <Footer />
+
 
     </>
 
