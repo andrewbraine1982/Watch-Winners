@@ -3,6 +3,8 @@
 import "../competition.css";
 import { useState } from "react";
 
+import Navbar from "../../components/Navbar";
+
 const competition = {
   title: "Rolex GMT-Master II Pepsi",
   image: "/images/watches/RolexPepsi.png",
@@ -50,9 +52,13 @@ export default function CompetitionPage() {
       ? "Building your entry."
       : "Ready for the live draw.";
 
-  return (
+return (
 
-    <main className="competition-page">
+    <>
+
+      <Navbar />
+
+      <main className="competition-page">
 
       <div className="competition-layout">
 
@@ -277,9 +283,11 @@ export default function CompetitionPage() {
 
         </section>
 
-      </div>
+        </div>
 
     </main>
+
+    </>
 
   );
 }
