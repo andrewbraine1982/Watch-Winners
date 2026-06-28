@@ -64,7 +64,18 @@ export default function CompetitionPage() {
 
         <div className="watch-stage">
 
-  <div className="gold-dust"></div>
+<div className="gold-orbs">
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+</div>
 
   <img
     src={competition.image}
