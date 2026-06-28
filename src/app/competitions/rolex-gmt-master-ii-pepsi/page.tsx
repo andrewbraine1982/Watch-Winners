@@ -59,6 +59,37 @@ export default function CompetitionPage() {
             </div>
           ))}
         </div>
+        <div className="entry-summary">
+
+  <div className="summary-card">
+
+    <p className="summary-label">YOUR ENTRY</p>
+
+    <h3>{selectedEntries} Entries</h3>
+
+    <div className="summary-row">
+      <span>Competition</span>
+      <strong>Rolex GMT-Master II Pepsi</strong>
+    </div>
+
+    <div className="summary-row">
+      <span>Total</span>
+      <strong>£{(selectedEntries * 14.99).toFixed(2)}</strong>
+    </div>
+
+    <ul className="summary-list">
+      <li>✓ Secure checkout</li>
+      <li>✓ Winner verified live</li>
+      <li>✓ Authentic Rolex guaranteed</li>
+    </ul>
+
+    <button className="summary-button">
+      Secure {selectedEntries} {selectedEntries === 1 ? "Entry" : "Entries"} →
+    </button>
+
+  </div>
+
+</div>
       </section>
     </main>
   );
