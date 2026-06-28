@@ -1,5 +1,6 @@
 "use client";
 
+import "../competition.css";
 import { useState } from "react";
 
 const competition = {
