@@ -3,147 +3,182 @@
 import { useState } from "react";
 
 export default function CompetitionPage() {
-  const [selectedEntries, setSelectedEntries] = useState(5);
+  const competition = {
+    name: "Rolex GMT-Master II Pepsi",
+    image: "/images/watches/RolexPepsi.png",
+    price: 14.99,
+    tag: "LIVE COMPETITION",
+    subtitle: [
+      "One authentic Rolex.",
+      "One verified winner.",
+      "Your chance starts with a single entry."
+    ]
+  };
 
   const tickets = [
-    { entries: 1, price: 14.99, badge: "" },
-    { entries: 5, price: 74.95, badge: "MOST POPULAR" },
-    { entries: 10, price: 149.9, badge: "BEST VALUE" },
+    { entries: 1, badge: "" },
+    { entries: 5, badge: "MOST POPULAR" },
+    { entries: 10, badge: "BEST VALUE" }
   ];
+
+  const [selectedEntries, setSelectedEntries] = useState(5);
+
+  const total = (selectedEntries * competition.price).toFixed(2);
+
+  const progress =
+    selectedEntries === 1
+      ? 20
+      : selectedEntries === 5
+      ? 60
+      : 100;
+
+  const progressText =
+    selectedEntries === 1
+      ? "Every winner starts with a single entry."
+      : selectedEntries === 5
+      ? "Building your entry."
+      : "Ready for the live draw.";
 
   return (
     <main className="competition-page">
-      <section className="competition-hero">
-        <div className="competition-left">
-          <img
-            src="/images/watches/RolexPepsi.png"
-            alt="Rolex GMT-Master II Pepsi"
-            className="competition-watch"
-          />
-        </div>
 
-        <div className="competition-right">
-          <span className="competition-tag">LIVE COMPETITION</span>
+      <div className="competition-layout">
 
-          <h1>Rolex GMT-Master II Pepsi</h1>
+        <aside className="competition-sidebar">
 
-          <p className="competition-subtitle">
-            One authentic Rolex.
-            <br />
-            One verified winner.
-            <br />
-            Your chance starts with a single entry.
-          </p>
-        </div>
-      </section>
+          <div className="sticky-watch">
 
-     <section className="competition-configurator">
+            <img
+              src={competition.image}
+              alt={competition.name}
+              className="competition-watch"
+            />
 
-<div className="config-left">
+          </div>
 
-  <div className="sticky-watch">
+        </aside>
 
-    <img
-      src="/images/watches/RolexPepsi.png"
-      alt="Rolex GMT-Master II Pepsi"
-      className="competition-watch"
-    />
+        <section className="competition-content">
 
-  </div>
+          <section className="competition-hero">
 
-</div>
+            <span className="competition-tag">
+              {competition.tag}
+            </span>
 
-<div className="config-right">
+            <h1>{competition.name}</h1>
 
-<section className="entry-selector">
-        <h2>Choose Your Entries</h2>
-        <div className="entry-progress">
+            <p className="competition-subtitle">
+              {competition.subtitle.map((line) => (
+                <>
+                  {line}
+                  <br />
+                </>
+              ))}
+            </p>
 
-  <p className="progress-message">
-    {selectedEntries === 1 &&
-      "Every winner starts with a single entry."}
+          </section>
 
-    {selectedEntries === 5 &&
-      "Building your entry."}
+          <section className="entry-selector">
 
-    {selectedEntries === 10 &&
-      "Ready for the live draw."}
-  </p>
+            <h2>Choose Your Entries</h2>
 
-  <div className="progress-track">
-
-    <div
-      className="progress-fill"
-      style={{
-        width:
-          selectedEntries === 1
-            ? "20%"
-            : selectedEntries === 5
-            ? "60%"
-            : "100%"
-      }}
-    />
-
-  </div>
-
-</div>
-
-        <div className="entry-grid">
-          {tickets.map((ticket) => (
-            <div
-              key={ticket.entries}
-              className={`entry-card ${
-                selectedEntries === ticket.entries ? "selected" : ""
-              }`}
-              onClick={() => setSelectedEntries(ticket.entries)}
-            >
-              {ticket.badge && (
-                <span className="entry-badge">{ticket.badge}</span>
-              )}
-
-              <span className="entry-number">{ticket.entries}</span>
-
-              <small>£{ticket.price.toFixed(2)}</small>
+            <div className="progress-text">
+              {progressText}
             </div>
-          ))}
-        </div>
-        <div className="entry-summary">
 
-  <div className="summary-card">
+            <div className="progress-bar">
 
-    <p className="summary-label">YOUR ENTRY</p>
+              <div
+                className="progress-fill"
+                style={{
+                  width: `${progress}%`
+                }}
+              />
 
-    <h3>{selectedEntries} Entries</h3>
+            </div>
 
-    <div className="summary-row">
-      <span>Competition</span>
-      <strong>Rolex GMT-Master II Pepsi</strong>
-    </div>
+            <div className="entry-grid">
 
-    <div className="summary-row">
-      <span>Total</span>
-      <strong>£{(selectedEntries * 14.99).toFixed(2)}</strong>
-    </div>
+              {tickets.map((ticket) => (
+                <div
+                  key={ticket.entries}
+                  className={`entry-card ${
+                    selectedEntries === ticket.entries
+                      ? "selected"
+                      : ""
+                  }`}
+                  onClick={() =>
+                    setSelectedEntries(ticket.entries)
+                  }
+                >
+                  {ticket.badge && (
+                    <span className="entry-badge">
+                      {ticket.badge}
+                    </span>
+                  )}
 
-    <ul className="summary-list">
-      <li>✓ Secure checkout</li>
-      <li>✓ Winner verified live</li>
-      <li>✓ Authentic Rolex guaranteed</li>
-    </ul>
+                  <span className="entry-number">
+                    {ticket.entries}
+                  </span>
 
-    <button className="summary-button">
-      Secure {selectedEntries} {selectedEntries === 1 ? "Entry" : "Entries"} →
-    </button>
+                  <small>
+                    £{(
+                      ticket.entries *
+                      competition.price
+                    ).toFixed(2)}
+                  </small>
+                </div>
+              ))}
 
-  </div>
+            </div>
+                        <div className="entry-summary">
 
-</div>
-      </section>
+              <div className="summary-card">
 
-</div>
+                <p className="summary-label">
+                  YOUR ENTRY
+                </p>
 
-</section>
+                <h3>
+                  {selectedEntries}{" "}
+                  {selectedEntries === 1
+                    ? "Entry"
+                    : "Entries"}
+                </h3>
 
-</main>
+                <div className="summary-row">
+                  <span>Competition</span>
+                  <strong>
+                    {competition.name}
+                  </strong>
+                </div>
+
+                <div className="summary-row">
+                  <span>Total</span>
+                  <strong>£{total}</strong>
+                </div>
+
+                <ul className="summary-list">
+                  <li>✓ Authentic Rolex</li>
+                  <li>✓ Winner verified live</li>
+                  <li>✓ Secure checkout</li>
+                </ul>
+
+                <button className="summary-button">
+                  Complete My Entry →
+                </button>
+
+              </div>
+
+            </div>
+
+          </section>
+
+        </section>
+
+      </div>
+
+    </main>
   );
 }
