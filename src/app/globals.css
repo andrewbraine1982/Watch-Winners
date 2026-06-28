@@ -1514,3 +1514,14 @@ font-size:52px;
 }
 
 }
+.competition-watch{
+  width:88%;
+  max-width:700px;
+  object-fit:contain;
+  filter:drop-shadow(0 35px 70px rgba(212,175,79,.18));
+  transition:.5s ease;
+}
+
+.competition-watch:hover{
+  transform:scale(1.03) rotate(-2deg);
+}
