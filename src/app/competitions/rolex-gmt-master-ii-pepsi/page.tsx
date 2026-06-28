@@ -39,6 +39,36 @@ export default function CompetitionPage() {
 
       <section className="entry-selector">
         <h2>Choose Your Entries</h2>
+        <div className="entry-progress">
+
+  <p className="progress-message">
+    {selectedEntries === 1 &&
+      "Every winner starts with a single entry."}
+
+    {selectedEntries === 5 &&
+      "Building your entry."}
+
+    {selectedEntries === 10 &&
+      "Ready for the live draw."}
+  </p>
+
+  <div className="progress-track">
+
+    <div
+      className="progress-fill"
+      style={{
+        width:
+          selectedEntries === 1
+            ? "20%"
+            : selectedEntries === 5
+            ? "60%"
+            : "100%"
+      }}
+    />
+
+  </div>
+
+</div>
 
         <div className="entry-grid">
           {tickets.map((ticket) => (
