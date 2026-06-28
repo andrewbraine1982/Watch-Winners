@@ -4,9 +4,13 @@ export default function CompetitionPage() {
 
       <section className="competition-hero">
 
-        <div className="competition-left">
-          IMAGE
-        </div>
+       <div className="competition-left">
+  <img
+    src="/images/watches/RolexPepsi.png"
+    alt="Rolex GMT-Master II Pepsi"
+    className="competition-watch"
+  />
+</div>
 
         <div className="competition-right">
 
