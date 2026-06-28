@@ -748,6 +748,36 @@ color:#666;
 .winners .section-header{
     margin-bottom:70px;
 }
+/* ============================
+WINNERS CTA
+============================ */
+
+.winner-cta{
+    max-width:760px;
+    margin:90px auto 0;
+    text-align:center;
+}
+
+.winner-cta h3{
+    font-family:Georgia,serif;
+    font-size:46px;
+    color:#f4f1ea;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.winner-cta p{
+    max-width:620px;
+    margin:0 auto 36px;
+    color:#b9bec7;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.winner-cta-button{
+    display:inline-block;
+    text-decoration:none;
+}
 
 /* ===========================
 TRUST
