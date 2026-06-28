@@ -133,3 +133,139 @@
     text-align:center;
     margin-bottom:16px;
 }
+/* ==========================================
+   ENTRY BUILDER
+========================================== */
+
+.entry-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin:50px 0;
+}
+
+.entry-card{
+    position:relative;
+    background:#17181a;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    padding:40px;
+    cursor:pointer;
+    transition:.35s;
+    overflow:hidden;
+}
+
+.entry-card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af4f;
+    box-shadow:0 25px 70px rgba(212,175,79,.12);
+}
+
+.entry-card.selected{
+    border:2px solid #d4af4f;
+    background:radial-gradient(circle at top,#252117,#17181a);
+    box-shadow:0 30px 90px rgba(212,175,79,.18);
+}
+
+.entry-badge{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:#d4af4f;
+    color:#111;
+    padding:8px 16px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.16em;
+}
+
+.entry-number{
+    display:block;
+    font-family:Georgia,serif;
+    font-size:82px;
+    margin-bottom:12px;
+}
+
+.entry-card small{
+    font-size:20px;
+    color:#d4af4f;
+    font-weight:700;
+}
+
+/* ==========================================
+   SUMMARY CARD
+========================================== */
+
+.entry-summary{
+    display:flex;
+    justify-content:center;
+    margin-top:70px;
+}
+
+.summary-card{
+    width:100%;
+    max-width:620px;
+    background:#17181a;
+    border:1px solid rgba(212,175,79,.25);
+    border-radius:34px;
+    padding:44px;
+}
+
+.summary-label{
+    color:#d4af4f;
+    letter-spacing:.25em;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.summary-card h3{
+    font-family:Georgia,serif;
+    font-size:66px;
+    margin:0 0 34px;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:22px;
+    font-size:18px;
+}
+
+.summary-row span{
+    color:#b7b7b7;
+}
+
+.summary-row strong{
+    color:#fff;
+}
+
+.summary-list{
+    list-style:none;
+    padding:0;
+    margin:40px 0;
+}
+
+.summary-list li{
+    margin:16px 0;
+    font-size:18px;
+    color:#d7d7d7;
+}
+
+.summary-button{
+    width:100%;
+    height:68px;
+    border:none;
+    border-radius:999px;
+    background:#d4af4f;
+    color:#111;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.summary-button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 20px 50px rgba(212,175,79,.35);
+}
