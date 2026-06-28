@@ -569,3 +569,126 @@ height:820px;
     }
 
 }
+/* ==========================================
+   LUXURY GOLD ORBS
+========================================== */
+
+.gold-orbs{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:visible;
+
+}
+
+.gold-orbs span{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(212,175,79,.9);
+
+    filter:blur(12px);
+
+    animation:floatOrb 18s ease-in-out infinite;
+
+}
+
+/* orb sizes & positions */
+
+.gold-orbs span:nth-child(1){
+    width:18px;
+    height:18px;
+    top:12%;
+    left:18%;
+    animation-delay:0s;
+}
+
+.gold-orbs span:nth-child(2){
+    width:28px;
+    height:28px;
+    top:28%;
+    left:72%;
+    animation-delay:-4s;
+}
+
+.gold-orbs span:nth-child(3){
+    width:14px;
+    height:14px;
+    top:65%;
+    left:12%;
+    animation-delay:-7s;
+}
+
+.gold-orbs span:nth-child(4){
+    width:34px;
+    height:34px;
+    top:76%;
+    left:70%;
+    animation-delay:-10s;
+}
+
+.gold-orbs span:nth-child(5){
+    width:22px;
+    height:22px;
+    top:48%;
+    left:82%;
+    animation-delay:-2s;
+}
+
+.gold-orbs span:nth-child(6){
+    width:16px;
+    height:16px;
+    top:22%;
+    left:52%;
+    animation-delay:-8s;
+}
+
+.gold-orbs span:nth-child(7){
+    width:26px;
+    height:26px;
+    top:82%;
+    left:32%;
+    animation-delay:-12s;
+}
+
+.gold-orbs span:nth-child(8){
+    width:20px;
+    height:20px;
+    top:56%;
+    left:44%;
+    animation-delay:-5s;
+}
+
+@keyframes floatOrb{
+
+    0%{
+        transform:
+            translateY(0)
+            translateX(0)
+            scale(1);
+        opacity:.15;
+    }
+
+    50%{
+        transform:
+            translateY(-18px)
+            translateX(10px)
+            scale(1.2);
+        opacity:.7;
+    }
+
+    100%{
+        transform:
+            translateY(0)
+            translateX(0)
+            scale(1);
+        opacity:.15;
+    }
+
+}
