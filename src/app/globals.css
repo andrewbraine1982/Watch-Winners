@@ -1813,3 +1813,44 @@ background:linear-gradient(180deg,#1d1d1f,#121212);
     transition:width .45s ease;
     box-shadow:0 0 18px rgba(212,175,79,.45);
 }
+/* =========================================
+   CONFIGURATOR LAYOUT
+========================================= */
+
+.competition-configurator{
+
+    max-width:1500px;
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:480px 1fr;
+
+    gap:90px;
+
+    align-items:start;
+
+}
+
+.sticky-watch{
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+.config-left{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.config-right{
+
+    width:100%;
+
+}
