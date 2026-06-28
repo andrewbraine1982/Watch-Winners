@@ -269,3 +269,131 @@
     transform:translateY(-3px);
     box-shadow:0 20px 50px rgba(212,175,79,.35);
 }
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1400px){
+
+    .competition-layout{
+        grid-template-columns:480px 1fr;
+        gap:60px;
+    }
+
+    .watch-details h1{
+        font-size:54px;
+    }
+
+    .entry-selector h2{
+        font-size:54px;
+    }
+
+}
+
+@media (max-width:1100px){
+
+    .competition-layout{
+        display:block;
+        padding:60px 24px;
+    }
+
+    .competition-sidebar{
+        margin-bottom:70px;
+    }
+
+    .sticky-panel{
+        position:relative;
+        top:auto;
+    }
+
+    .competition-watch{
+        max-width:520px;
+        margin:0 auto;
+    }
+
+    .watch-details{
+        text-align:center;
+    }
+
+    .watch-info{
+        max-width:620px;
+        margin:40px auto 0;
+    }
+
+    .competition-content{
+        padding-top:0;
+    }
+
+    .entry-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media (max-width:800px){
+
+    .entry-grid{
+        grid-template-columns:1fr;
+    }
+
+    .entry-card{
+        padding:34px;
+    }
+
+    .entry-number{
+        font-size:64px;
+    }
+
+    .summary-card{
+        padding:34px;
+    }
+
+    .summary-card h3{
+        font-size:48px;
+    }
+
+    .summary-row{
+        flex-direction:column;
+        gap:8px;
+        align-items:flex-start;
+    }
+
+    .watch-details h1{
+        font-size:42px;
+    }
+
+    .entry-selector h2{
+        font-size:42px;
+    }
+
+    .competition-description{
+        font-size:18px;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .competition-layout{
+        padding:40px 18px;
+    }
+
+    .competition-tag{
+        font-size:11px;
+        padding:8px 16px;
+    }
+
+    .entry-card{
+        border-radius:22px;
+    }
+
+    .summary-card{
+        border-radius:26px;
+    }
+
+    .summary-button{
+        font-size:18px;
+        height:60px;
+    }
+
+}
