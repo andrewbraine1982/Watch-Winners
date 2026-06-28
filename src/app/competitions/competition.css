@@ -430,3 +430,58 @@
     }
 
 }
+/* ==========================================
+   WATCH STAGE
+========================================== */
+
+.watch-stage{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.gold-dust{
+
+    position:absolute;
+
+    inset:-80px;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.gold-dust::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+        radial-gradient(circle,#d4af4f 1px,transparent 1px),
+
+        radial-gradient(circle,#e7c76b 1px,transparent 1px),
+
+        radial-gradient(circle,#b9912f 1px,transparent 1px);
+
+    background-size:
+
+        140px 140px,
+
+        180px 180px,
+
+        220px 220px;
+
+    opacity:.18;
+
+}
