@@ -79,7 +79,7 @@
 
     position:absolute;
 
-    inset:-20%;
+   inset:5%;
 
     background:
         linear-gradient(
@@ -99,7 +99,7 @@
 
     pointer-events:none;
 
-    z-index:1;
+   z-index:3;
 
 }
 .watch-stage::before{
@@ -138,6 +138,8 @@ height:820px;
     width:100%;
     display:block;
     object-fit:contain;
+   position:relative;
+z-index:2;
     filter:drop-shadow(0 30px 80px rgba(0,0,0,.45));
 }
 
