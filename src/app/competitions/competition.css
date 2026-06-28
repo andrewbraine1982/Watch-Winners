@@ -1,1 +1,135 @@
+/* ==========================================
+   WATCH WINNERS
+   COMPETITION LAYOUT
+========================================== */
 
+.competition-page{
+    background:#0b0c0d;
+    color:#fff;
+    min-height:100vh;
+}
+
+.competition-layout{
+    max-width:1600px;
+    margin:0 auto;
+    padding:80px 40px;
+    display:grid;
+    grid-template-columns:560px 1fr;
+    gap:90px;
+    align-items:start;
+}
+
+.competition-sidebar{
+    position:relative;
+}
+
+.sticky-panel{
+    position:sticky;
+    top:120px;
+}
+
+.competition-watch{
+    width:100%;
+    display:block;
+    object-fit:contain;
+    filter:drop-shadow(0 30px 80px rgba(0,0,0,.45));
+}
+
+.watch-details{
+    margin-top:40px;
+}
+
+.competition-tag{
+    display:inline-flex;
+    align-items:center;
+    padding:10px 22px;
+    border-radius:999px;
+    background:#d4af4f;
+    color:#111;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.18em;
+    margin-bottom:24px;
+}
+
+.watch-details h1{
+    font-family:Georgia,serif;
+    font-size:64px;
+    line-height:1.05;
+    margin:0 0 28px;
+}
+
+.competition-description{
+    color:#b8b8b8;
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.watch-info{
+    background:#17181a;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    padding:32px;
+}
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+.info-row strong{
+    color:#fff;
+}
+
+.progress-track{
+    width:100%;
+    height:8px;
+    background:#262626;
+    border-radius:999px;
+    overflow:hidden;
+    margin:18px 0 30px;
+}
+
+.progress-fill{
+    height:100%;
+    background:linear-gradient(90deg,#b58b2a,#e4c665);
+    border-radius:999px;
+    transition:.45s;
+}
+
+.watch-info ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.watch-info li{
+    color:#d8d8d8;
+    margin:14px 0;
+    font-size:16px;
+}
+
+.competition-content{
+    padding-top:60px;
+}
+
+.entry-selector h2{
+    font-family:Georgia,serif;
+    font-size:64px;
+    margin:0 0 42px;
+}
+
+.entry-progress{
+    margin-bottom:40px;
+}
+
+.progress-message{
+    color:#d4af4f;
+    font-size:18px;
+    text-align:center;
+    margin-bottom:16px;
+}
