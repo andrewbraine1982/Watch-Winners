@@ -1752,3 +1752,43 @@ background:linear-gradient(180deg,#1d1d1f,#121212);
     box-shadow:0 10px 35px rgba(212,175,79,.35);
 
 }
+/* =========================================
+   WATCH WINNERS PROGRESS EXPERIENCE
+========================================= */
+
+.entry-progress{
+    max-width:720px;
+    margin:24px auto 55px;
+    text-align:center;
+}
+
+.progress-message{
+    color:#d4af4f;
+    font-size:18px;
+    font-weight:500;
+    margin-bottom:18px;
+    min-height:28px;
+    transition:all .35s ease;
+}
+
+.progress-track{
+    width:100%;
+    height:8px;
+    background:rgba(255,255,255,.08);
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    height:100%;
+    width:20%;
+    border-radius:999px;
+    background:linear-gradient(
+        90deg,
+        #b68d2a,
+        #d4af4f,
+        #f2d67d
+    );
+    transition:width .45s ease;
+    box-shadow:0 0 18px rgba(212,175,79,.45);
+}
