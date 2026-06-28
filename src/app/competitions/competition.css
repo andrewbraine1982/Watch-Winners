@@ -60,7 +60,53 @@
 
     z-index:2;
 }
+.watch-stage{
 
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    isolation:isolate;
+
+}
+
+.watch-stage::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:680px;
+
+    height:680px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(18,78,52,.55) 0%,
+
+            rgba(18,78,52,.22) 35%,
+
+            rgba(212,175,79,.10) 58%,
+
+            transparent 80%
+
+        );
+
+    filter:blur(60px);
+
+    z-index:-2;
+
+}
 .competition-watch{
     width:100%;
     display:block;
