@@ -1525,3 +1525,107 @@ font-size:52px;
 .competition-watch:hover{
   transform:scale(1.03) rotate(-2deg);
 }
+/* ENTRY SELECTOR */
+
+.entry-selector{
+max-width:1400px;
+margin:100px auto 0;
+}
+
+.entry-selector h2{
+font-family:Georgia,serif;
+font-size:54px;
+margin-bottom:50px;
+}
+
+.entry-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.entry-card{
+
+background:#17181a;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:28px;
+
+padding:42px;
+
+cursor:pointer;
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.entry-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#d4af4f;
+
+box-shadow:0 25px 60px rgba(212,175,79,.15);
+
+}
+
+.entry-number{
+
+display:block;
+
+font-size:70px;
+
+font-family:Georgia,serif;
+
+margin-bottom:12px;
+
+}
+
+.entry-card small{
+
+font-size:22px;
+
+color:#d4af4f;
+
+}
+
+.entry-badge{
+
+position:absolute;
+
+top:22px;
+
+right:22px;
+
+padding:8px 14px;
+
+border-radius:999px;
+
+background:#d4af4f;
+
+color:#111;
+
+font-size:11px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+.popular{
+
+border:2px solid #d4af4f;
+
+}
+
+.premium{
+
+background:linear-gradient(180deg,#1d1d1f,#121212);
+
+}
