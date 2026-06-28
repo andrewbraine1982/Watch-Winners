@@ -22,10 +22,43 @@
 .competition-sidebar{
     position:relative;
 }
+.competition-sidebar::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    top:80px;
+    left:-60px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,79,.14) 0%,
+            rgba(212,175,79,.06) 35%,
+            transparent 75%
+        );
+
+    filter:blur(80px);
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
 
 .sticky-panel{
+
     position:sticky;
+
     top:120px;
+
+    z-index:2;
 }
 
 .competition-watch{
