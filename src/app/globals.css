@@ -1573,6 +1573,27 @@ border-color:#d4af4f;
 box-shadow:0 25px 60px rgba(212,175,79,.15);
 
 }
+.entry-card.selected{
+
+    border:1px solid #d4af4f;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(212,175,79,.10),
+            rgba(24,24,24,1) 70%
+        );
+
+    box-shadow:
+        0 0 35px rgba(212,175,79,.10),
+        inset 0 0 20px rgba(212,175,79,.05);
+
+    transform:translateY(-6px) scale(1.02);
+
+    transition:
+        all .45s cubic-bezier(.2,.8,.2,1);
+
+}
 
 .entry-number{
 
