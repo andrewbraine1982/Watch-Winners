@@ -1,4 +1,7 @@
+"use client";
+import { useState } from "react";
 export default function CompetitionPage() {
+  const [selectedEntries, setSelectedEntries] = useState(5);
   return (
     <main className="competition-page">
 
