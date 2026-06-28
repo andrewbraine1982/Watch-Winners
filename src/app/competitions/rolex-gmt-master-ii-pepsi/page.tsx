@@ -3,7 +3,7 @@
 import "../competition.css";
 import { useState } from "react";
 
-import Navbar from "../../components/Navbar";
+import Navbar from "../../../components/Navbar";
 
 const competition = {
   title: "Rolex GMT-Master II Pepsi",
