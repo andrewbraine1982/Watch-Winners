@@ -720,3 +720,22 @@ height:820px;
     }
 
 }
+@keyframes lightSweep{
+
+    0%{
+        transform:translateX(-140%) rotate(-8deg);
+    }
+
+    35%{
+        transform:translateX(-140%) rotate(-8deg);
+    }
+
+    55%{
+        transform:translateX(20%) rotate(-8deg);
+    }
+
+    100%{
+        transform:translateX(140%) rotate(-8deg);
+    }
+
+}
