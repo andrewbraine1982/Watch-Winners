@@ -62,11 +62,17 @@ export default function CompetitionPage() {
 
           <div className="sticky-panel">
 
-            <img
-              src={competition.image}
-              alt={competition.title}
-              className="competition-watch"
-            />
+        <div className="watch-stage">
+
+  <div className="gold-dust"></div>
+
+  <img
+    src={competition.image}
+    alt={competition.title}
+    className="competition-watch"
+  />
+
+</div>
 
             <div className="watch-details">
 
