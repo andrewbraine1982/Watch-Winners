@@ -72,6 +72,18 @@ export default function Winners() {
           </article>
         ))}
       </div>
+      <div className="winner-cta">
+  <h3>The next winner hasn't entered... yet.</h3>
+
+  <p>
+    Every watch is authentic. Every draw is independently verified.
+    Every winner starts with a single entry.
+  </p>
+
+  <a href="#competitions" className="winner-cta-button ww-nav-cta">
+    View Live Competitions →
+  </a>
+</div>
     </section>
   );
 }
