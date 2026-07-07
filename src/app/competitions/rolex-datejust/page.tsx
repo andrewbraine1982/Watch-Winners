@@ -7,12 +7,12 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 const competition = {
-  title: "Rolex GMT-Master II Pepsi",
-  image: "/images/watches/RolexPepsi.png",
-  price: 14.99,
-  retailValue: "£18,000",
-cashAlternative: "£16,500",
-drawDate: "30 June 2026",
+title: "Rolex Datejust",
+image: "/images/watches/RolexDatejust.png",
+price: 7.99,
+retailValue: "£8,950",
+cashAlternative: "£8,000",
+drawDate: "21 July 2026",
   totalEntries: 299,
   soldEntries: 184,
   tag: "LIVE COMPETITION",
