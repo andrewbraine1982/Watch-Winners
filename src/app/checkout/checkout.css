@@ -392,15 +392,16 @@ font-size:40px;
 
 .checkout-hero p{
 
-    max-width:720px;
+    max-width:620px;
 
-    margin:0 auto 48px;
+    margin:0 auto;
 
-    color:rgba(255,255,255,.72);
+    font-size:20px;
 
-    font-size:19px;
+    color:#666;
 
-    line-height:1.8;
+    line-height:1.7;
+
 }
 
 .checkout-trust-bar{
@@ -444,22 +445,86 @@ font-size:40px;
 
 .checkout-hero{
 
-padding:50px 32px;
+    text-align:center;
 
-margin-bottom:40px;
+    padding:70px 20px 50px;
 
 }
 
 .checkout-hero h1{
 
-font-size:42px;
+    font-family:Georgia,serif;
+
+    font-size:52px;
+
+    color:#17181a;
+
+    margin:14px 0 18px;
+
+    line-height:1.05;
+
+}
+/* ==========================================
+   REASSURANCE
+========================================== */
+
+.checkout-reassurance{
+
+    margin:120px auto 80px;
+
+    max-width:1200px;
+
+    padding:0 30px;
 
 }
 
-.checkout-trust-bar{
+.reassurance-grid{
 
-justify-content:flex-start;
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.reassurance-grid div{
+
+    background:white;
+
+    border:1px solid #ececec;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    color:#333;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+@media(max-width:900px){
+
+.reassurance-grid{
+
+grid-template-columns:1fr 1fr;
 
 }
 
 }
+
+@media(max-width:600px){
+
+.reassurance-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
