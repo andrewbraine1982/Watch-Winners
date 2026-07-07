@@ -3,21 +3,33 @@
 ========================================== */
 
 .checkout-page{
-    background:#0f1012;
+    background:#f7f5f1;
+
     min-height:100vh;
-    padding:120px 0 100px;
-    color:#fff;
+
+    padding:0 0 100px;
+
+    color:#17181a;
 }
 
 .checkout-container{
+
     width:min(1280px,92%);
-    margin:auto;
+
+    margin:-60px auto 0;
 
     display:grid;
-    grid-template-columns:1.2fr .8fr;
+
+    grid-template-columns:1.15fr .85fr;
+
     gap:70px;
 
     align-items:start;
+
+    position:relative;
+
+    z-index:2;
+
 }
 
 /* ==========================================
@@ -25,10 +37,19 @@
 ========================================== */
 
 .checkout-form{
-    background:#17181a;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:36px;
-    padding:56px;
+
+    background:white;
+
+    border:1px solid rgba(0,0,0,.06);
+
+    border-radius:34px;
+
+    padding:60px;
+
+    box-shadow:
+
+        0 30px 90px rgba(0,0,0,.08);
+
 }
 
 .checkout-tag{
@@ -85,21 +106,22 @@
 
     width:100%;
 
-    background:#111214;
+    background:#fafafa;
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid #e8e8e8;
 
-    border-radius:18px;
+    border-radius:16px;
 
-    padding:18px 22px;
-
-    color:white;
+    padding:18px 20px;
 
     font-size:16px;
 
+    color:#17181a;
+
     margin-bottom:18px;
 
-    transition:.3s;
+    transition:.25s;
+
 }
 
 .form-section input:focus{
@@ -108,7 +130,12 @@
 
     border-color:#d4af4f;
 
-    box-shadow:0 0 0 4px rgba(212,175,79,.08);
+    background:white;
+
+    box-shadow:
+
+        0 0 0 4px rgba(212,175,79,.08);
+
 }
 
 .payment-placeholder{
@@ -170,11 +197,18 @@
 
     background:#17181a;
 
-    border:1px solid rgba(212,175,79,.18);
+    color:white;
 
-    border-radius:36px;
+    border:none;
 
-    padding:40px;
+    border-radius:34px;
+
+    padding:42px;
+
+    box-shadow:
+
+        0 35px 100px rgba(0,0,0,.25);
+
 }
 
 .checkout-summary img{
