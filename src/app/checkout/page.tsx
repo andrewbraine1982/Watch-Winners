@@ -16,19 +16,6 @@ export default function CheckoutPage() {
       <main className="checkout-page">
 
         <div className="checkout-container">
-<section className="checkout-hero">
-
-  <span>SECURE CHECKOUT</span>
-
-  <h1>
-    Complete Your Entry
-  </h1>
-
-  <p>
-    Your details are encrypted and securely processed.
-  </p>
-
-</section>
 
           <section className="checkout-form">
 
