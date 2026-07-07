@@ -183,21 +183,7 @@ export default function CheckoutPage() {
           </aside>
 
         </div>
-    <section className="checkout-reassurance">
-
-  <div className="reassurance-grid">
-
-    <div>🔒 256-bit SSL Encryption</div>
-
-    <div>✓ Authentic Rolex Guaranteed</div>
-
-    <div>✓ Winner Verified Live</div>
-
-    <div>✓ Fully Insured Delivery</div>
-
-  </div>
-
-</section>
+   
 
       </main>
 
