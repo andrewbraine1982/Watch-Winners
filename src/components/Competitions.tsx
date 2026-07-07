@@ -5,6 +5,7 @@ const watches = [
     price: "£19.99",
     sold: 82,
     image: "/images/watches/daytona.jpg",
+    link: "/competitions/rolex-daytona",
   },
   {
     title: "Rolex Submariner",
@@ -12,6 +13,7 @@ const watches = [
     price: "£9.99",
     sold: 71,
     image: "/images/watches/submariner.jpg",
+    link: "/competitions/rolex-submariner",
   },
   {
     title: "Rolex Datejust",
@@ -19,6 +21,7 @@ const watches = [
     price: "£7.99",
     sold: 64,
     image: "/images/watches/datejust.jpg",
+    link: "/competitions/rolex-datejust",
   },
 ];
 
@@ -66,9 +69,13 @@ export default function Competitions() {
                 <strong>
                   From {watch.price}
                 </strong>
-<button className="ww-nav-cta">
-  Enter Now
-</button>
+
+                <a
+                  href={watch.link}
+                  className="ww-nav-cta"
+                >
+                  Enter Now
+                </a>
               </div>
             </div>
           </article>
