@@ -30,26 +30,6 @@ export default function CheckoutPage() {
 
 </section>
 
-    <span>
-      🔒 256-bit SSL Encryption
-    </span>
-
-    <span>
-      ✓ Authentic Rolex Guaranteed
-    </span>
-
-    <span>
-      ✓ Winner Verified Live
-    </span>
-
-    <span>
-      ✓ Fully Insured Delivery
-    </span>
-
-  </div>
-
-</section>
-
           <section className="checkout-form">
 
             <span className="checkout-tag">
