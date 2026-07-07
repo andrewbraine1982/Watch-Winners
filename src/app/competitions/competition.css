@@ -757,3 +757,42 @@ z-index:2;
   }
 
 }
+/* ==========================================
+   Competition Meta
+========================================== */
+
+.competition-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  margin: 2.25rem 0 2.5rem;
+}
+
+.meta-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.meta-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.meta-item span {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
+.meta-item strong {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+}
