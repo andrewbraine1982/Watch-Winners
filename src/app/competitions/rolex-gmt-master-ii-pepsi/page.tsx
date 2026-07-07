@@ -105,9 +105,7 @@ return (
                 {competition.title}
               </h1>
 
-              <p className="competition-description">
-
-         <div className="competition-meta">
+<div className="competition-meta">
 
   <div className="meta-item">
     <span>Retail Value</span>
@@ -124,7 +122,9 @@ return (
     <strong>{competition.drawDate}</strong>
   </div>
 
-</div>
+</div>          
+
+
               <div className="watch-info">
 
                 <div className="info-row">
