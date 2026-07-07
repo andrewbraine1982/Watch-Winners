@@ -16,6 +16,43 @@ export default function CheckoutPage() {
       <main className="checkout-page">
 
         <div className="checkout-container">
+          <section className="checkout-hero">
+
+  <span className="checkout-hero-tag">
+    SECURE CHECKOUT
+  </span>
+
+  <h1>
+    Complete Your Secure Entry
+  </h1>
+
+  <p>
+    Every Watch Winners entry is protected by
+    bank-level encryption and secure payment
+    processing.
+  </p>
+
+  <div className="checkout-trust-bar">
+
+    <span>
+      🔒 256-bit SSL Encryption
+    </span>
+
+    <span>
+      ✓ Authentic Rolex Guaranteed
+    </span>
+
+    <span>
+      ✓ Winner Verified Live
+    </span>
+
+    <span>
+      ✓ Fully Insured Delivery
+    </span>
+
+  </div>
+
+</section>
 
           <section className="checkout-form">
 
