@@ -107,17 +107,24 @@ return (
 
               <p className="competition-description">
 
-                {competition.description.map(
-                  (line, index) => (
-                    <span key={index}>
-                      {line}
-                      <br />
-                    </span>
-                  )
-                )}
+         <div className="competition-meta">
 
-              </p>
+  <div className="meta-item">
+    <span>Retail Value</span>
+    <strong>{competition.retailValue}</strong>
+  </div>
 
+  <div className="meta-item">
+    <span>Cash Alternative</span>
+    <strong>{competition.cashAlternative}</strong>
+  </div>
+
+  <div className="meta-item">
+    <span>Draw Date</span>
+    <strong>{competition.drawDate}</strong>
+  </div>
+
+</div>
               <div className="watch-info">
 
                 <div className="info-row">
