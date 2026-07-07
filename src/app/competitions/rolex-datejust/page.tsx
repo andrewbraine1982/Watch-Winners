@@ -8,7 +8,7 @@ import Footer from "../../../components/Footer";
 
 const competition = {
 title: "Rolex Datejust",
-image: "/images/watches/RolexDatejust.png",
+image: "/images/watches/datejust.jpg",
 price: 7.99,
 retailValue: "£8,950",
 cashAlternative: "£8,000",
