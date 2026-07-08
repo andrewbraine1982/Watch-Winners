@@ -2,8 +2,9 @@
 
 import "../competition.css";
 import { useState } from "react";
+import Link from "next/link";
 
-import Navbar from "../../../components/Navbar";
+import Navbar from "../../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 const competition = {
@@ -200,51 +201,57 @@ return (
 
             </div>
 
-            <div className="entry-grid">
+           <div className="entry-grid">
 
-              {ticketOptions.map((ticket) => (
+  {ticketOptions.map((ticket) => (
 
-                <div
-                  key={ticket.entries}
-                  className={`entry-card ${
-                    selectedEntries ===
-                    ticket.entries
-                      ? "selected"
-                      : ""
-                  }`}
-                  onClick={() =>
-                    setSelectedEntries(
-                      ticket.entries
-                    )
-                  }
-                >
+    <Link
+      key={ticket.entries}
+      href={`/checkout?tickets=${ticket.entries}`}
+      style={{ textDecoration: "none", color: "inherit" }}
+    >
 
-                  {ticket.badge && (
+      <div
+        className={`entry-card ${
+          selectedEntries === ticket.entries
+            ? "selected"
+            : ""
+        }`}
+        onClick={() =>
+          setSelectedEntries(ticket.entries)
+        }
+      >
 
-                    <span className="entry-badge">
-                      {ticket.badge}
-                    </span>
+        {ticket.badge && (
 
-                  )}
+          <span className="entry-badge">
+            {ticket.badge}
+          </span>
 
-                  <span className="entry-number">
+        )}
 
-                    {ticket.entries}
+        <span className="entry-number">
 
-                  </span>
+          {ticket.entries}
 
-                  <small>
+        </span>
 
-                    £{(
-                      ticket.entries *
-                      competition.price
-                    ).toFixed(2)}
+        <small>
 
-                  </small>
+          £{(
+            ticket.entries *
+            competition.price
+          ).toFixed(2)}
 
-                </div>
+        </small>
 
-              ))}
+      </div>
+
+    </Link>
+
+  ))}
+
+</div>
 
             </div>
                         <div className="entry-summary">
