@@ -2,7 +2,7 @@
 
 import "../competition.css";
 import { useState } from "react";
-import Link from "next/link";
+
 
 import Navbar from "../../../../components/Navbar";
 import Footer from "../../../components/Footer";
@@ -201,17 +201,35 @@ return (
 
             </div>
 
-           <div className="entry-grid">
-
+          <div className="entry-grid">
   {ticketOptions.map((ticket) => (
+    <button
+      key={ticket.entries}
+      className={`entry-card ${
+        selectedEntries === ticket.entries ? "active" : ""
+      }`}
+      onClick={() => setSelectedEntries(ticket.entries)}
+    >
+      {ticket.badge && (
+        <span className="entry-badge">
+          {ticket.badge}
+        </span>
+      )}
 
-  
+      <h3>{ticket.entries}</h3>
 
+      <p>
+        {ticket.entries === 1 ? "Entry" : "Entries"}
+      </p>
+
+      <strong>
+        £{(ticket.entries * competition.price).toFixed(2)}
+      </strong>
+    </button>
   ))}
-
 </div>
 
-            </div>
+<div className="entry-summary">
                         <div className="entry-summary">
 
               <div className="summary-card">
