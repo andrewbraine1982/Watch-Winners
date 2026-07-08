@@ -8,6 +8,8 @@ import "./checkout.css";
 
 export default function CheckoutPage() {
   const searchParams = useSearchParams();
+  console.log("entries =", entries);
+console.log("query =", searchParams.toString());
 
   const entries = Number(searchParams.get("entries")) || 1;
 
