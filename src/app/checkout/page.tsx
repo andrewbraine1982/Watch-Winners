@@ -8,15 +8,21 @@ import "./checkout.css";
 
 export default function CheckoutPage() {
   const searchParams = useSearchParams();
-  console.log("entries =", entries);
-console.log("query =", searchParams.toString());
 
-  const entries = Number(searchParams.get("entries")) || 1;
+  const watch = searchParams.get("watch") || "pepsi";
+  const entries = Number(searchParams.get("entries") ?? "1");
 
-  // Temporary until competitions are moved into a shared data file
-  const ticketPrice = 14.99;
+  // Temporary until competitions.ts is introduced
+  const competition = {
+    pepsi: {
+      title: "Rolex GMT-Master II Pepsi",
+      image: "/images/watches/RolexPepsi.png",
+      retailValue: "£18,000",
+      ticketPrice: 14.99,
+    },
+  }[watch];
 
-  const total = (entries * ticketPrice).toFixed(2);
+  const total = (entries * competition.ticketPrice).toFixed(2);
 
   return (
     <>
@@ -29,9 +35,7 @@ console.log("query =", searchParams.toString());
               SECURE CHECKOUT
             </span>
 
-            <h1>
-              Complete Your Entry
-            </h1>
+            <h1>Complete Your Entry</h1>
 
             <p className="checkout-intro">
               Your details are securely encrypted and never shared with third
@@ -42,9 +46,7 @@ console.log("query =", searchParams.toString());
               <h2>Customer Details</h2>
 
               <input placeholder="Full Name" />
-
               <input placeholder="Email Address" />
-
               <input placeholder="Phone Number" />
             </div>
 
@@ -52,9 +54,7 @@ console.log("query =", searchParams.toString());
               <h2>Billing Address</h2>
 
               <input placeholder="Address Line 1" />
-
               <input placeholder="Town / City" />
-
               <input placeholder="Postcode" />
             </div>
 
@@ -73,19 +73,17 @@ console.log("query =", searchParams.toString());
 
           <aside className="checkout-summary">
             <img
-              src="/images/watches/RolexPepsi.png"
-              alt="Rolex Pepsi"
+              src={competition.image}
+              alt={competition.title}
             />
 
             <span>LIVE COMPETITION</span>
 
-            <h2>
-              Rolex GMT-Master II Pepsi
-            </h2>
+            <h2>{competition.title}</h2>
 
             <div className="summary-row">
               <span>Retail Value</span>
-              <strong>£18,000</strong>
+              <strong>{competition.retailValue}</strong>
             </div>
 
             <div className="summary-row">
