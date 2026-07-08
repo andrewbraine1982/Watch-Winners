@@ -205,49 +205,7 @@ return (
 
   {ticketOptions.map((ticket) => (
 
-    <Link
-      key={ticket.entries}
-      href={`/checkout?tickets=${ticket.entries}`}
-      style={{ textDecoration: "none", color: "inherit" }}
-    >
-
-      <div
-        className={`entry-card ${
-          selectedEntries === ticket.entries
-            ? "selected"
-            : ""
-        }`}
-        onClick={() =>
-          setSelectedEntries(ticket.entries)
-        }
-      >
-
-        {ticket.badge && (
-
-          <span className="entry-badge">
-            {ticket.badge}
-          </span>
-
-        )}
-
-        <span className="entry-number">
-
-          {ticket.entries}
-
-        </span>
-
-        <small>
-
-          £{(
-            ticket.entries *
-            competition.price
-          ).toFixed(2)}
-
-        </small>
-
-      </div>
-
-    </Link>
+  
 
   ))}
 
