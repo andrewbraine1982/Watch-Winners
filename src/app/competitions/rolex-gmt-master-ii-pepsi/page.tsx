@@ -266,6 +266,7 @@ return (
                 </ul>
 
      <a
+<a
   href={`/checkout?watch=pepsi&entries=${selectedEntries}`}
   className="summary-button"
 >
@@ -273,20 +274,16 @@ return (
 </a>
 
               </div>
-
             </div>
 
           </section>
-
         </section>
 
-        </div>
+      </div>
 
-    </main>
-    <Footer />
+      </main>
 
-
+      <Footer />
     </>
-
   );
 }
