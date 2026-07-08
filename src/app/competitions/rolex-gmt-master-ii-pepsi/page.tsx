@@ -229,7 +229,7 @@ return (
   ))}
 </div>
 
-<div className="entry-summary">
+
                         <div className="entry-summary">
 
               <div className="summary-card">
