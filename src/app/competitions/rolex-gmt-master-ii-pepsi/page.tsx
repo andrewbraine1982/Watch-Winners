@@ -265,7 +265,7 @@ return (
                   <li>✓ Authentic Rolex guaranteed</li>
                 </ul>
 
-     <a
+     
 <a
   href={`/checkout?watch=pepsi&entries=${selectedEntries}`}
   className="summary-button"
