@@ -2,6 +2,8 @@
 
 import "../competition.css";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import SkillChallengeModal from "../../../components/SkillChallengeModal";
 
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
@@ -30,6 +32,11 @@ const ticketOptions = [
 ];
 
 export default function CompetitionPage() {
+  const router = useRouter();
+
+  const [showSkillModal, setShowSkillModal] = useState(false);
+
+  const [selectedEntries, setSelectedEntries] = useState(5);
 
   const [selectedEntries, setSelectedEntries] = useState(5);
 
@@ -282,9 +289,12 @@ return (
                   <li>✓ Authentic Rolex guaranteed</li>
                 </ul>
 
-                <button className="summary-button">
-                  Complete My Entry →
-                </button>
+        <button
+  className="summary-button"
+  onClick={() => setShowSkillModal(true)}
+>
+  Complete My Entry →
+</button>
 
               </div>
 
@@ -299,7 +309,25 @@ return (
     </main>
     <Footer />
 
-
+<SkillChallengeModal
+  open={showSkillModal}
+  title={competition.title}
+  question="Which Rolex collection is shown?"
+  image={competition.image}
+  answers={[
+    "Daytona",
+    "GMT-Master II",
+    "Datejust",
+    "Submariner",
+  ]}
+  correctAnswer="Daytona"
+  onClose={() => setShowSkillModal(false)}
+  onSuccess={() => {
+    router.push(
+      `/checkout?watch=daytona&entries=${selectedEntries}`
+    );
+  }}
+/>
     </>
 
   );
