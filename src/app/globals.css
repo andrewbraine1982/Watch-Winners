@@ -528,6 +528,34 @@ background:#fff;
 padding:40px;
 border-radius:28px;
 box-shadow:0 20px 60px rgba(0,0,0,.05);
+transition:all .35s ease;
+border:1px solid transparent;
+position:relative;
+overflow:hidden;
+}
+
+.step-card::before{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(circle at top right,
+rgba(200,164,90,.18),
+transparent 60%);
+opacity:0;
+transition:opacity .35s ease;
+pointer-events:none;
+}
+
+.step-card:hover{
+transform:translateY(-10px);
+border-color:rgba(200,164,90,.35);
+box-shadow:
+0 30px 80px rgba(0,0,0,.10),
+0 0 35px rgba(200,164,90,.20);
+}
+
+.step-card:hover::before{
+opacity:1;
 }
 
 .step-number{
@@ -541,12 +569,24 @@ align-items:center;
 justify-content:center;
 font-weight:700;
 margin-bottom:24px;
+transition:all .3s ease;
+}
+
+.step-card:hover .step-number{
+background:#c8a45a;
+color:#111;
+transform:scale(1.08);
 }
 
 .step-card h3{
 font-family:Georgia,serif;
 font-size:32px;
 margin-bottom:18px;
+transition:color .3s ease;
+}
+
+.step-card:hover h3{
+color:#c8a45a;
 }
 
 .step-card p{
