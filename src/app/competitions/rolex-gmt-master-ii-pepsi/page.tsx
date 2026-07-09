@@ -2,10 +2,12 @@
 
 import "../competition.css";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import SkillChallengeModal from "../../../components/SkillChallengeModal";
 
 const competition = {
   title: "Rolex GMT-Master II Pepsi",
@@ -32,7 +34,10 @@ const ticketOptions = [
 
 export default function CompetitionPage() {
 
-  const [selectedEntries, setSelectedEntries] = useState(5);
+const router = useRouter();
+
+const [selectedEntries, setSelectedEntries] = useState(5);
+const [showSkillModal, setShowSkillModal] = useState(false);
 
   const total = (
     selectedEntries * competition.price
@@ -265,13 +270,15 @@ return (
                   <li>✓ Authentic Rolex guaranteed</li>
                 </ul>
 
-     
-<a
-  href={`/checkout?watch=pepsi&entries=${selectedEntries}`}
+     <button
+  type="button"
   className="summary-button"
+  onClick={() => setShowSkillModal(true)}
 >
   Complete My Entry →
-</a>
+</button>
+
+ 
 
               </div>
             </div>
@@ -282,6 +289,28 @@ return (
       </div>
 
       </main>
+
+        <SkillChallengeModal
+        open={showSkillModal}
+        title={competition.title}
+        question="Which Rolex collection is shown?"
+        image={competition.image}
+        answers={[
+          "Daytona",
+          "GMT-Master II",
+          "Datejust",
+          "Submariner",
+        ]}
+        correctAnswer="GMT-Master II"
+        onClose={() => setShowSkillModal(false)}
+        onSuccess={() => {
+          setShowSkillModal(false);
+
+          router.push(
+            `/checkout?watch=pepsi&entries=${selectedEntries}`
+          );
+        }}
+      />
 
       <Footer />
     </>
