@@ -1,57 +1,107 @@
+import Link from "next/link";
+import Footer from "../../components/Footer";
+
 export default function PrivacyPolicy() {
   return (
-    <main className="legal-page">
+    <>
+      <main
+        style={{
+          background: "#f8f6f1",
+          minHeight: "100vh",
+          padding: "80px 24px",
+        }}
+      >
+        <div style={{ maxWidth: "980px", margin: "0 auto" }}>
+          <Link
+            href="/"
+            style={{
+              color: "#0d3b2e",
+              textDecoration: "none",
+              fontWeight: 700,
+            }}
+          >
+            ← Back to Home
+          </Link>
 
-      <div className="legal-container">
+          <div style={{ margin: "50px 0 40px" }}>
+            <span
+              style={{
+                color: "#c8a45a",
+                fontWeight: 700,
+                letterSpacing: "3px",
+                textTransform: "uppercase",
+              }}
+            >
+              Legal Information
+            </span>
 
-        <h1>Privacy Policy</h1>
+            <h1
+              style={{
+                fontFamily: "Georgia, serif",
+                fontSize: "72px",
+                margin: "16px 0",
+                lineHeight: 1,
+              }}
+            >
+              Privacy Policy
+            </h1>
 
-        <p>
-          Watch Winners is a trading name of Winners Collective Ltd.
-          We are committed to protecting your privacy and handling your
-          personal information responsibly.
-        </p>
+            <p style={{ color: "#777" }}>
+              Last updated: July 2026
+            </p>
+          </div>
 
-        <h2>Information We Collect</h2>
+          <div
+            style={{
+              background: "#fff",
+              borderRadius: "30px",
+              padding: "60px",
+              boxShadow: "0 30px 80px rgba(0,0,0,.08)",
+              lineHeight: 1.9,
+            }}
+          >
+            <h2>Information We Collect</h2>
 
-        <p>
-          We may collect your name, email address, telephone number,
-          billing details and any information required to administer
-          competitions and comply with UK law.
-        </p>
+            <p>
+              We collect information you provide when creating an account,
+              purchasing competition entries, subscribing to updates and
+              contacting us.
+            </p>
 
-        <h2>How We Use Your Information</h2>
+            <h2>How We Use Your Information</h2>
 
-        <p>
-          Your information is used to process entries, verify winners,
-          provide customer support, send important competition updates
-          and meet our legal obligations.
-        </p>
+            <p>
+              Your information is used to administer competitions, verify
+              winners, process payments, communicate with you and comply with
+              our legal obligations.
+            </p>
 
-        <h2>Payment Security</h2>
+            <h2>Keeping Your Information Safe</h2>
 
-        <p>
-          Payments are processed securely through trusted third-party
-          payment providers. We never store your payment card details.
-        </p>
+            <p>
+              We use secure technologies and trusted payment providers to help
+              protect your personal information.
+            </p>
 
-        <h2>Your Rights</h2>
+            <h2>Your Rights</h2>
 
-        <p>
-          You may request access, correction or deletion of your personal
-          information at any time by contacting us.
-        </p>
+            <p>
+              You may request access, correction or deletion of your personal
+              information where permitted by applicable law.
+            </p>
 
-        <h2>Contact</h2>
+            <h2>Contact</h2>
 
-        <p>
-          Winners Collective Ltd<br/>
-          71–75 Shelton Street<br/>
-          London WC2H 9JQ
-        </p>
+            <p>
+              If you have any questions regarding this Privacy Policy, please
+              contact Winners Collective Ltd using the details provided on our
+              website.
+            </p>
+          </div>
+        </div>
+      </main>
 
-      </div>
-
-    </main>
+      <Footer />
+    </>
   );
 }
