@@ -39,7 +39,9 @@ const router = useRouter();
 const [selectedEntries, setSelectedEntries] = useState(5);
 const [showSkillModal, setShowSkillModal] = useState(false);
 
- const total = (entries * competition.price).toFixed(2);
+const total = (
+  selectedEntries * competition.price
+).toFixed(2);
 
   const soldPercent =
     (competition.soldEntries /
