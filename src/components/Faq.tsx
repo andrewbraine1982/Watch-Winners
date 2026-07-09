@@ -1,6 +1,5 @@
-import "./Faq.css";
 "use client";
-
+import "./Faq.css";
 import { useState } from "react";
 
 const faqs = [
