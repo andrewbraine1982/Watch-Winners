@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Footer from "../../components/Footer";
 
 export default function TermsPage() {
@@ -17,16 +18,68 @@ export default function TermsPage() {
             margin: "0 auto",
           }}
         >
-          <Link
-            href="/"
-            style={{
-              color: "#0d3b2e",
-              textDecoration: "none",
-              fontWeight: 700,
-            }}
-          >
-            ← Back to Home
-          </Link>
+
+          <div style={{ marginBottom: "60px" }}>
+
+            <Link
+              href="/"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "16px",
+                textDecoration: "none",
+                marginBottom: "30px",
+              }}
+            >
+              <Image
+                src="/logo.png"
+                alt="Watch Winners"
+                width={64}
+                height={64}
+                priority
+              />
+
+              <div>
+                <div
+                  style={{
+                    fontFamily: "Georgia, serif",
+                    fontSize: "30px",
+                    fontWeight: 700,
+                    color: "#111",
+                    lineHeight: 1,
+                  }}
+                >
+                  WATCH WINNERS
+                </div>
+
+                <div
+                  style={{
+                    color: "#777",
+                    fontSize: "14px",
+                    marginTop: "4px",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  Luxury Watch Competitions
+                </div>
+              </div>
+            </Link>
+
+            <br />
+
+            <Link
+              href="/"
+              style={{
+                color: "#0d3b2e",
+                textDecoration: "none",
+                fontWeight: 700,
+                fontSize: "17px",
+              }}
+            >
+              ← Back to Home
+            </Link>
+
+          </div>
 
           <div
             style={{
@@ -96,8 +149,9 @@ export default function TermsPage() {
             <h2>Prizes</h2>
 
             <p>
-              Prizes are as described on each competition page. Where offered,
-              any cash alternative will be clearly stated.
+              All prizes are described on the relevant competition page. Where
+              a cash alternative is available, this will be clearly stated
+              before entry.
             </p>
 
             <h2>Refunds</h2>
@@ -110,10 +164,13 @@ export default function TermsPage() {
             <h2>Acceptance</h2>
 
             <p>
-              By using this website and entering any competition you agree to
-              these Terms & Conditions.
+              By accessing this website and entering any Watch Winners
+              competition, you confirm that you have read, understood and agree
+              to these Terms & Conditions.
             </p>
+
           </div>
+
         </div>
       </main>
 
