@@ -1,3 +1,4 @@
+import "./Faq.css";
 "use client";
 
 import { useState } from "react";
