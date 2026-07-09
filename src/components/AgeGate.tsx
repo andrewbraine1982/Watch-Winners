@@ -55,7 +55,7 @@ export default function AgeGate() {
                 className="agegate-primary"
                 onClick={handleContinue}
               >
-                Continue
+               I'm Over 18 — Continue
               </button>
             </div>
 
