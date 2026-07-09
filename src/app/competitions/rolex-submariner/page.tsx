@@ -288,10 +288,12 @@ return (
                   <li>✓ Authentic Rolex guaranteed</li>
                 </ul>
 
-                <button className="summary-button">
-                  Complete My Entry →
-                </button>
-
+               <button
+  className="summary-button"
+  onClick={() => setShowSkillModal(true)}
+>
+  Complete My Entry →
+</button>
               </div>
 
             </div>
@@ -302,8 +304,31 @@ return (
 
         </div>
 
-    </main>
-    <Footer />
+</main>
+
+<SkillChallengeModal
+  open={showSkillModal}
+  title={competition.title}
+  image={competition.image}
+  question="Which Rolex collection is shown?"
+  answers={[
+    "Daytona",
+    "GMT-Master II",
+    "Datejust",
+    "Submariner",
+  ]}
+  correctAnswer="Submariner"
+  onClose={() => setShowSkillModal(false)}
+  onSuccess={() => {
+    setShowSkillModal(false);
+
+    router.push(
+      `/checkout?watch=submariner&entries=${selectedEntries}`
+    );
+  }}
+/>
+
+<Footer />
 
 
     </>
