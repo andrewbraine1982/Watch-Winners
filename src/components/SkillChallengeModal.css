@@ -1,0 +1,128 @@
+.skill-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 8, 8, 0.82);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  z-index: 9999;
+}
+
+.skill-modal {
+  width: 100%;
+  max-width: 620px;
+  background: #171717;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 28px;
+  padding: 42px;
+  position: relative;
+  color: #fff;
+  box-shadow:
+    0 25px 80px rgba(0,0,0,.55);
+}
+
+.skill-close {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,.6);
+  font-size: 28px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.skill-close:hover {
+  color: #fff;
+}
+
+.skill-tag {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #d4af37;
+}
+
+.skill-modal h2 {
+  margin: 0 0 12px;
+  font-size: 44px;
+  line-height: 1.1;
+  font-family: Georgia, serif;
+}
+
+.skill-intro {
+  color: rgba(255,255,255,.72);
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+
+.skill-image {
+  width: 220px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.skill-modal h3 {
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+.skill-options {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.skill-option {
+  background: #222;
+  border: 1px solid rgba(255,255,255,.08);
+  color: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: .2s;
+}
+
+.skill-option:hover {
+  border-color: #d4af37;
+}
+
+.skill-option.active {
+  background: #d4af37;
+  color: #111;
+  border-color: #d4af37;
+}
+
+.skill-error {
+  color: #ff8b8b;
+  margin-bottom: 18px;
+}
+
+.skill-continue {
+  width: 100%;
+  height: 58px;
+  border: none;
+  border-radius: 999px;
+  background: #d4af37;
+  color: #111;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.skill-continue:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.skill-continue:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
