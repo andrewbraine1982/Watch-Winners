@@ -1,70 +1,103 @@
+import Link from "next/link";
+import Footer from "@/components/Footer";
+
 export default function TermsPage() {
   return (
-    <main className="legal-page">
+    <>
+      <main
+        style={{
+          background: "#f8f6f1",
+          minHeight: "100vh",
+          padding: "80px 24px",
+        }}
+      >
+        <div style={{ maxWidth: 980, margin: "0 auto" }}>
+          <Link
+            href="/"
+            style={{
+              color: "#0d3b2e",
+              fontWeight: 700,
+              textDecoration: "none",
+            }}
+          >
+            ← Back to Home
+          </Link>
 
-      <div className="legal-container">
+          <div style={{ marginTop: 50, marginBottom: 40 }}>
+            <span
+              style={{
+                color: "#c8a45a",
+                fontWeight: 700,
+                letterSpacing: "3px",
+                textTransform: "uppercase",
+              }}
+            >
+              Legal Information
+            </span>
 
-        <h1>Terms & Conditions</h1>
+            <h1
+              style={{
+                fontFamily: "Georgia, serif",
+                fontSize: "72px",
+                margin: "16px 0",
+              }}
+            >
+              Terms & Conditions
+            </h1>
 
-        <p>
-          These Terms & Conditions govern your use of the Watch Winners
-          website and your participation in our competitions.
-        </p>
+            <p style={{ color: "#777" }}>
+              Last updated: July 2026
+            </p>
+          </div>
 
-        <h2>Eligibility</h2>
+          <div
+            style={{
+              background: "#fff",
+              borderRadius: 30,
+              padding: 60,
+              boxShadow: "0 30px 80px rgba(0,0,0,.08)",
+              lineHeight: 1.9,
+            }}
+          >
+            <h2>Eligibility</h2>
+            <p>
+              Entrants must be at least 18 years old and legally permitted to
+              participate in competitions within the United Kingdom.
+            </p>
 
-        <p>
-          Entrants must be at least 18 years old and legally permitted to
-          participate in competitions within the United Kingdom.
-        </p>
+            <h2>Skill-Based Competition</h2>
+            <p>
+              Every entry requires the successful completion of our skill-based
+              challenge before checkout can be completed.
+            </p>
 
-        <h2>Skill-Based Competition</h2>
+            <h2>Winner Selection</h2>
+            <p>
+              Winners are selected using an independently verified live draw
+              after each competition closes.
+            </p>
 
-        <p>
-          Every entry requires the successful completion of a skill-based
-          challenge before purchase can be completed.
-        </p>
+            <h2>Prizes</h2>
+            <p>
+              All prizes are described on each competition page. Where offered,
+              any cash alternative will be clearly stated.
+            </p>
 
-        <h2>Winner Selection</h2>
+            <h2>Refunds</h2>
+            <p>
+              Competition entries are non-refundable unless required by law.
+            </p>
 
-        <p>
-          Winners are selected using a transparent live draw after the
-          competition closes. Winners will be contacted using the details
-          provided during entry.
-        </p>
+            <h2>Acceptance</h2>
+            <p>
+              By entering a competition you agree to these Terms &
+              Conditions.
+            </p>
+          </div>
+        </div>
+      </main>
 
-        <h2>Prizes</h2>
-
-        <p>
-          Prizes are as described on each competition page. Where offered,
-          a cash alternative may be available at our discretion.
-        </p>
-
-        <h2>Competition Changes</h2>
-
-        <p>
-          If insufficient entries are received, the closing date may be
-          extended in accordance with our Competition Rules.
-        </p>
-
-        <h2>Limitation of Liability</h2>
-
-        <p>
-          Winners Collective Ltd accepts no liability for technical issues,
-          website outages or events beyond our reasonable control.
-        </p>
-
-        <h2>Company Information</h2>
-
-        <p>
-          Watch Winners is a trading name of Winners Collective Ltd.<br />
-          Registered Office:<br />
-          71–75 Shelton Street<br />
-          London WC2H 9JQ
-        </p>
-
-      </div>
-
-    </main>
+      <Footer />
+    </>
   );
 }
