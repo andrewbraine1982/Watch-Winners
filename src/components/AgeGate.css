@@ -1,1 +1,159 @@
+.agegate-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 32px;
+
+  background: rgba(8, 8, 8, 0.78);
+  backdrop-filter: blur(14px);
+  animation: ageFade .35s ease;
+}
+
+@keyframes ageFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.agegate-card {
+  width: 100%;
+  max-width: 620px;
+
+  background: #171717;
+
+  border: 1px solid rgba(212,175,79,.35);
+  border-radius: 28px;
+
+  padding: 54px;
+
+  text-align: center;
+
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.55);
+}
+
+.agegate-tag {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #d4af4f;
+
+  font-size: 12px;
+
+  letter-spacing: .22em;
+
+  text-transform: uppercase;
+}
+
+.agegate-card h1 {
+  margin: 0 0 26px;
+
+  font-family: Georgia, serif;
+
+  font-size: 56px;
+
+  line-height: 1.05;
+
+  color: #fff;
+}
+
+.agegate-text {
+  margin: 0 auto 18px;
+
+  max-width: 460px;
+
+  color: rgba(255,255,255,.74);
+
+  font-size: 20px;
+
+  line-height: 1.8;
+}
+
+.agegate-text strong {
+  color: #fff;
+}
+
+.agegate-buttons {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  margin: 42px 0 34px;
+}
+
+.agegate-primary,
+.agegate-secondary {
+  height: 60px;
+
+  border-radius: 999px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.agegate-primary {
+  border: none;
+
+  background: #d4af4f;
+
+  color: #111;
+}
+
+.agegate-primary:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 30px rgba(212,175,79,.25);
+}
+
+.agegate-secondary {
+  background: transparent;
+
+  border: 1px solid rgba(212,175,79,.45);
+
+  color: #fff;
+}
+
+.agegate-secondary:hover {
+  background: rgba(212,175,79,.08);
+}
+
+.agegate-footer {
+  color: rgba(255,255,255,.45);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+@media (max-width:768px) {
+
+  .agegate-card {
+    padding: 36px 28px;
+  }
+
+  .agegate-card h1 {
+    font-size: 42px;
+  }
+
+  .agegate-text {
+    font-size: 18px;
+  }
+
+}
