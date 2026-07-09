@@ -13,14 +13,18 @@ export default function CheckoutPage() {
   const entries = Number(searchParams.get("entries") ?? "1");
 
   // Temporary until competitions.ts is introduced
-  const competition = {
+  const competitions = {
     pepsi: {
       title: "Rolex GMT-Master II Pepsi",
       image: "/images/watches/RolexPepsi.png",
       retailValue: "£18,000",
       ticketPrice: 14.99,
     },
-  }[watch];
+  };
+
+  const competition =
+    competitions[watch as keyof typeof competitions] ??
+    competitions.pepsi;
 
   const total = (entries * competition.ticketPrice).toFixed(2);
 
