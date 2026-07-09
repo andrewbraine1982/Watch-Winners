@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Footer from "../../components/Footer";
 
 export default function PrivacyPolicy() {
@@ -12,16 +13,68 @@ export default function PrivacyPolicy() {
         }}
       >
         <div style={{ maxWidth: "980px", margin: "0 auto" }}>
-          <Link
-            href="/"
-            style={{
-              color: "#0d3b2e",
-              textDecoration: "none",
-              fontWeight: 700,
-            }}
-          >
-            ← Back to Home
-          </Link>
+
+          <div style={{ marginBottom: "60px" }}>
+
+            <Link
+              href="/"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "16px",
+                textDecoration: "none",
+                marginBottom: "30px",
+              }}
+            >
+              <Image
+                src="/logo.png"
+                alt="Watch Winners"
+                width={64}
+                height={64}
+                priority
+              />
+
+              <div>
+                <div
+                  style={{
+                    fontFamily: "Georgia, serif",
+                    fontSize: "30px",
+                    fontWeight: 700,
+                    color: "#111",
+                    lineHeight: 1,
+                  }}
+                >
+                  WATCH WINNERS
+                </div>
+
+                <div
+                  style={{
+                    color: "#777",
+                    fontSize: "14px",
+                    marginTop: "4px",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  Luxury Watch Competitions
+                </div>
+              </div>
+            </Link>
+
+            <br />
+
+            <Link
+              href="/"
+              style={{
+                color: "#0d3b2e",
+                textDecoration: "none",
+                fontWeight: 700,
+                fontSize: "17px",
+              }}
+            >
+              ← Back to Home
+            </Link>
+
+          </div>
 
           <div style={{ margin: "50px 0 40px" }}>
             <span
@@ -63,41 +116,47 @@ export default function PrivacyPolicy() {
             <h2>Information We Collect</h2>
 
             <p>
-              We collect information you provide when creating an account,
-              purchasing competition entries, subscribing to updates and
-              contacting us.
+              We collect information you provide when entering competitions,
+              creating an account, subscribing to updates, contacting us or
+              completing a purchase. This may include your name, email
+              address, telephone number and billing information.
             </p>
 
             <h2>How We Use Your Information</h2>
 
             <p>
               Your information is used to administer competitions, verify
-              winners, process payments, communicate with you and comply with
-              our legal obligations.
+              winners, process payments securely, communicate important
+              updates and comply with our legal and regulatory obligations.
             </p>
 
             <h2>Keeping Your Information Safe</h2>
 
             <p>
-              We use secure technologies and trusted payment providers to help
-              protect your personal information.
+              We take the security of your personal information seriously.
+              Appropriate technical and organisational measures are in place
+              to protect your data, and payments are handled securely through
+              trusted third-party providers.
             </p>
 
             <h2>Your Rights</h2>
 
             <p>
-              You may request access, correction or deletion of your personal
-              information where permitted by applicable law.
+              You have the right to request access to, correction of or
+              deletion of your personal information where applicable under UK
+              data protection legislation.
             </p>
 
-            <h2>Contact</h2>
+            <h2>Contact Us</h2>
 
             <p>
-              If you have any questions regarding this Privacy Policy, please
-              contact Winners Collective Ltd using the details provided on our
-              website.
+              If you have any questions about this Privacy Policy or how your
+              information is handled, please contact Winners Collective Ltd
+              using the contact details provided on our website.
             </p>
+
           </div>
+
         </div>
       </main>
 
