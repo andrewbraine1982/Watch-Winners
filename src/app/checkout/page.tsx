@@ -38,6 +38,9 @@ const competitions = {
     retailValue: "£10,800",
     ticketPrice: 9.99,
   },
+};
+
+const competition =
 
   const competition =
     competitions[watch as keyof typeof competitions] ??
