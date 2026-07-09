@@ -34,11 +34,9 @@ const ticketOptions = [
 export default function CompetitionPage() {
   const router = useRouter();
 
-  const [showSkillModal, setShowSkillModal] = useState(false);
+const [showSkillModal, setShowSkillModal] = useState(false);
 
-  const [selectedEntries, setSelectedEntries] = useState(5);
-
-  const [selectedEntries, setSelectedEntries] = useState(5);
+const [selectedEntries, setSelectedEntries] = useState(5);
 
   const total = (
     selectedEntries * competition.price
