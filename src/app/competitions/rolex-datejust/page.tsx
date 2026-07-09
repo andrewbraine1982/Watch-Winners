@@ -2,6 +2,9 @@
 
 import "../competition.css";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+
+import SkillChallengeModal from "../../../components/SkillChallengeModal";
 
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
@@ -30,6 +33,9 @@ const ticketOptions = [
 ];
 
 export default function CompetitionPage() {
+  const router = useRouter();
+
+const [showSkillModal, setShowSkillModal] = useState(false);
 
   const [selectedEntries, setSelectedEntries] = useState(5);
 
@@ -282,9 +288,12 @@ return (
                   <li>✓ Authentic Rolex guaranteed</li>
                 </ul>
 
-                <button className="summary-button">
-                  Complete My Entry →
-                </button>
+             <button
+  className="summary-button"
+  onClick={() => setShowSkillModal(true)}
+>
+  Complete My Entry →
+</button>
 
               </div>
 
