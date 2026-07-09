@@ -305,8 +305,31 @@ return (
 
         </div>
 
-    </main>
-    <Footer />
+ </main>
+
+<SkillChallengeModal
+  open={showSkillModal}
+  title={competition.title}
+  image={competition.image}
+  question="Which Rolex collection is shown?"
+  answers={[
+    "Daytona",
+    "GMT-Master II",
+    "Datejust",
+    "Submariner",
+  ]}
+  correctAnswer="Datejust"
+  onClose={() => setShowSkillModal(false)}
+  onSuccess={() => {
+    setShowSkillModal(false);
+
+    router.push(
+      `/checkout?watch=datejust&entries=${selectedEntries}`
+    );
+  }}
+/>
+
+<Footer />
 
 
     </>
