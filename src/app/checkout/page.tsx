@@ -40,7 +40,7 @@ const competitions = {
   },
 };
 
-const competition =
+
 
 const competition =
   competitions[watch as keyof typeof competitions] ??
