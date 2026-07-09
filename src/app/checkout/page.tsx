@@ -42,9 +42,9 @@ const competitions = {
 
 const competition =
 
-  const competition =
-    competitions[watch as keyof typeof competitions] ??
-    competitions.pepsi;
+const competition =
+  competitions[watch as keyof typeof competitions] ??
+  competitions.pepsi;
 
   const total = (entries * competition.ticketPrice).toFixed(2);
 
