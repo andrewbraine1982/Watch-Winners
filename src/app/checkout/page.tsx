@@ -38,6 +38,13 @@ const competitions = {
     retailValue: "£10,800",
     ticketPrice: 9.99,
   },
+
+  daytona: {
+    title: "Rolex Daytona",
+    image: "/images/watches/daytona.jpg",
+    retailValue: "£22,500",
+    ticketPrice: 19.99,
+  },
 };
 
 
