@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import "./SkillChallengeModal.css";
 
 type Props = {
   open: boolean;
