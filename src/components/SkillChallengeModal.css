@@ -4,10 +4,11 @@
   background: rgba(8, 8, 8, 0.82);
   backdrop-filter: blur(10px);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 32px;
   z-index: 9999;
+  overflow-y: auto;
 }
 
 .skill-modal {
@@ -125,4 +126,32 @@
 .skill-continue:disabled {
   opacity: .4;
   cursor: not-allowed;
+}
+@media (max-width: 640px) {
+  .skill-modal-overlay {
+    padding: 20px;
+  }
+
+  .skill-modal {
+    margin: 24px 0;
+    padding: 32px 24px;
+    max-height: none;
+  }
+
+  .skill-modal h2 {
+    font-size: 42px;
+  }
+
+  .skill-image {
+    width: 180px;
+    margin-bottom: 24px;
+  }
+
+  .skill-options {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-continue {
+    margin-bottom: 20px;
+  }
 }
