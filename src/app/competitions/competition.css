@@ -279,10 +279,32 @@ z-index:2;
     box-shadow:0 25px 70px rgba(212,175,79,.12);
 }
 
-.entry-card.selected{
+.entry-card.active{
     border:2px solid #d4af4f;
     background:radial-gradient(circle at top,#252117,#17181a);
     box-shadow:0 30px 90px rgba(212,175,79,.18);
+   transform:translateY(-6px);
+}
+.entry-card h3{
+    margin:50px 0 14px;
+    font-family:Georgia,serif;
+    font-size:88px;
+    line-height:1;
+    font-weight:400;
+    color:#ffffff;
+}
+
+.entry-card p{
+    margin:0 0 22px;
+    font-size:22px;
+    color:#bcbcbc;
+}
+
+.entry-card strong{
+    display:block;
+    font-size:22px;
+    font-weight:700;
+    color:#d4af4f;
 }
 
 .entry-badge{
