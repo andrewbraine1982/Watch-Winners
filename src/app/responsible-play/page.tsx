@@ -1,155 +1,118 @@
 import Link from "next/link";
+import Image from "next/image";
 import Footer from "../../components/Footer";
 
-export default function ResponsiblePlay() {
+export default function ResponsiblePlayPage() {
   return (
     <>
-      <main
-        style={{
-          background: "#f8f6f1",
-          minHeight: "100vh",
-          padding: "80px 24px",
-        }}
-      >
-        <div style={{ maxWidth: "980px", margin: "0 auto" }}>
-         <div style={{ marginBottom: "60px" }}>
+      <main className="legalPage">
 
-  <Link
-    href="/"
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      gap: "16px",
-      textDecoration: "none",
-      marginBottom: "30px",
-    }}
-  >
-    <div
-      style={{
-        width: "54px",
-        height: "54px",
-        borderRadius: "50%",
-        background: "#0d3b2e",
-        color: "#fff",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontWeight: 800,
-        fontSize: "22px",
-      }}
-    >
-      W
-    </div>
+        <div className="legalContainer">
 
-    <div>
-      <div
-        style={{
-          fontFamily: "Georgia, serif",
-          fontSize: "30px",
-          fontWeight: 700,
-          color: "#111",
-          lineHeight: 1,
-        }}
-      >
-        WATCH WINNERS
-      </div>
+          <div className="legalHeader">
 
-      <div
-        style={{
-          color: "#777",
-          fontSize: "14px",
-          marginTop: "4px",
-          letterSpacing: "1px",
-        }}
-      >
-        Luxury Watch Competitions
-      </div>
-    </div>
-  </Link>
+            <Link href="/" className="legalBrand">
 
-  <br />
+              <Image
+                src="/logo.png"
+                alt="Watch Winners"
+                width={70}
+                height={70}
+                priority
+              />
 
-  <Link
-    href="/"
-    style={{
-      color: "#0d3b2e",
-      textDecoration: "none",
-      fontWeight: 700,
-      fontSize: "17px",
-    }}
-  >
-    ← Back to Home
-  </Link>
+              <div>
+                <h2>WATCH WINNERS</h2>
+                <span>Luxury Watch Competitions</span>
+              </div>
 
-</div>
+            </Link>
 
-          <div style={{ margin: "50px 0 40px" }}>
-            <span
-              style={{
-                color: "#c8a45a",
-                fontWeight: 700,
-                letterSpacing: "3px",
-                textTransform: "uppercase",
-              }}
-            >
-              Responsible Play
-            </span>
+            <div className="legalDivider" />
 
-            <h1
-              style={{
-                fontFamily: "Georgia, serif",
-                fontSize: "72px",
-                margin: "16px 0",
-                lineHeight: 1,
-              }}
-            >
-              Play Responsibly
-            </h1>
+            <Link href="/" className="backHome">
+              ← Back to Home
+            </Link>
 
-            <p style={{ color: "#777" }}>
-              Last updated: July 2026
-            </p>
           </div>
 
-          <div
-            style={{
-              background: "#fff",
-              borderRadius: "30px",
-              padding: "60px",
-              boxShadow: "0 30px 80px rgba(0,0,0,.08)",
-              lineHeight: 1.9,
-            }}
-          >
+          <span className="legalEyebrow">
+            RESPONSIBLE PLAY
+          </span>
+
+          <h1>Play Responsibly</h1>
+
+          <p className="legalIntro">
+            At Watch Winners, we believe competitions should always be fun,
+            affordable and enjoyable. We encourage every customer to play
+            responsibly and never spend more than they can comfortably afford.
+          </p>
+
+          <p className="lastUpdated">
+            Last updated: July 2026
+          </p>
+
+          <div className="legalCard">
+
             <h2>Play for Entertainment</h2>
 
             <p>
-              Our competitions are intended to be enjoyable. Please only enter
-              competitions within your financial means.
+              Our competitions are designed for entertainment. Purchasing
+              entries should always remain an enjoyable experience rather than
+              a way to make money or solve financial difficulties.
             </p>
 
             <h2>Know Your Limits</h2>
 
             <p>
-              Never chase losses or spend more than you can comfortably afford.
-              If entering competitions stops being enjoyable, take a break.
+              Before entering any competition, consider your personal budget.
+              Never spend money intended for bills, rent, food or other
+              essential living expenses.
             </p>
 
             <h2>18+ Only</h2>
 
             <p>
-              Watch Winners competitions are strictly open to people aged 18 or
-              over.
+              Watch Winners competitions are strictly available to people aged
+              18 years or over. We carry out age and identity verification
+              before prizes are awarded.
+            </p>
+
+            <h2>Take a Break</h2>
+
+            <p>
+              If participating in competitions stops being enjoyable, or you
+              feel you are spending more than intended, we encourage you to
+              take a break and seek support if required.
             </p>
 
             <h2>Need Support?</h2>
 
             <p>
-              If you feel your participation in competitions is becoming a
-              problem, seek support from an appropriate organisation or speak
-              with someone you trust.
+              If you believe your participation is becoming a problem, support
+              is available from organisations such as GamCare and BeGambleAware.
+              Speaking to someone early can make a significant difference.
             </p>
+
           </div>
+
+          <section className="legalContact">
+
+            <h3>Need Help?</h3>
+
+            <p>
+              If you have any questions regarding responsible play or your
+              account, our team is always happy to help.
+            </p>
+
+            <a href="mailto:hello@watchwinners.co.uk">
+              hello@watchwinners.co.uk
+            </a>
+
+          </section>
+
         </div>
+
       </main>
 
       <Footer />
