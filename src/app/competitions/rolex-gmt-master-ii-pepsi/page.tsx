@@ -8,31 +8,7 @@ import { useRouter } from "next/navigation";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import SkillChallengeModal from "../../../components/SkillChallengeModal";
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Win a Rolex GMT-Master II Pepsi | Rolex Competition UK | Watch Winners",
 
-  description:
-    "Enter our Rolex GMT-Master II Pepsi competition for your chance to win one of Rolex's most iconic luxury watches. Authentic Rolex. Skill-based competition. UK entries.",
-
-  keywords: [
-    "Rolex GMT Master II Pepsi",
-    "Rolex Pepsi competition",
-    "Win a Rolex Pepsi",
-    "Rolex GMT competition",
-    "Luxury watch competition",
-    "Rolex competition UK",
-    "Watch Winners"
-  ],
-
-  openGraph: {
-    title: "Win a Rolex GMT-Master II Pepsi",
-    description:
-      "Luxury Rolex GMT-Master II Pepsi competition from Watch Winners.",
-    type: "website"
-  }
-};
 
 const competition = {
   title: "Rolex GMT-Master II Pepsi",
