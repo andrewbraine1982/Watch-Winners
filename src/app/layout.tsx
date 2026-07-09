@@ -1,4 +1,5 @@
 import './globals.css'
+import AgeGate from "../components/AgeGate";
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 const manrope = Manrope({
@@ -14,7 +15,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-   <body className={manrope.className}>{children}</body>
+<body>
+  <AgeGate />
+  {children}
+</body>
     </html>
   )
 }
