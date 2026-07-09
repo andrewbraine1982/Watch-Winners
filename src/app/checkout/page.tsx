@@ -31,7 +31,13 @@ const competitions = {
     retailValue: "£8,950",
     ticketPrice: 7.99,
   },
-};
+
+  submariner: {
+    title: "Rolex Submariner",
+    image: "/images/watches/submariner.jpg",
+    retailValue: "£10,800",
+    ticketPrice: 9.99,
+  },
 
   const competition =
     competitions[watch as keyof typeof competitions] ??
