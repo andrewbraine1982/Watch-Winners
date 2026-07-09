@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -9,14 +11,13 @@ export default function Footer() {
           <h3>WATCH WINNERS</h3>
 
           <p>
-            Premium UK luxury watch competitions featuring authentic
-            Rolex timepieces, secure entries, live draws and verified
-            winners.
+            Premium UK luxury watch competitions featuring authentic luxury
+            timepieces, secure entries, live draws and verified winners.
           </p>
 
-          <small>
+          <strong>
             Watch Winners is a trading name of Winners Collective Ltd.
-          </small>
+          </strong>
 
         </div>
 
@@ -24,10 +25,10 @@ export default function Footer() {
 
           <h4>Explore</h4>
 
-          <a href="/">Home</a>
-          <a href="/#competitions">Competitions</a>
-          <a href="/#winners">Winners</a>
-          <a href="/#faq">FAQ</a>
+          <Link href="/">Home</Link>
+          <a href="#competitions">Competitions</a>
+          <a href="#winners">Winners</a>
+          <a href="#faq">FAQ</a>
 
         </div>
 
@@ -35,38 +36,66 @@ export default function Footer() {
 
           <h4>Legal</h4>
 
-          <a href="/terms-and-conditions">
+          <Link href="/terms-and-conditions">
             Terms & Conditions
-          </a>
+          </Link>
 
-          <a href="/privacy-policy">
+          <Link href="/privacy-policy">
             Privacy Policy
-          </a>
+          </Link>
 
-          <a href="/cookie-policy">
+          <Link href="/cookie-policy">
             Cookie Policy
-          </a>
+          </Link>
 
-          <a href="/responsible-play">
+          <Link href="/responsible-play">
             Responsible Play
-          </a>
+          </Link>
 
         </div>
 
         <div>
 
-          <h4>Company</h4>
+          <h4>🇬🇧 UK Company</h4>
+
+          <p>Winners Collective Ltd</p>
 
           <p>
-            Winners Collective Ltd
-            <br />
             71–75 Shelton Street
             <br />
             London WC2H 9JQ
           </p>
 
-          <a href="mailto:hello@watchwinners.co.uk">
-            hello@watchwinners.co.uk
+          <p>hello@watchwinners.co.uk</p>
+
+        </div>
+
+        <div>
+
+          <h4>Follow Us</h4>
+
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+          </a>
+
+          <a
+            href="https://tiktok.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            TikTok
+          </a>
+
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Facebook
           </a>
 
         </div>
@@ -75,12 +104,11 @@ export default function Footer() {
 
       <div className="footer-bottom">
 
-        <span>
-          © {new Date().getFullYear()} Watch Winners. All rights reserved.
-        </span>
+        © {new Date().getFullYear()} Watch Winners.
+        All rights reserved.
 
         <span>
-          Built with integrity. Drawn live. Winners verified.
+          Luxury watches • Live draws • Verified winners
         </span>
 
       </div>
