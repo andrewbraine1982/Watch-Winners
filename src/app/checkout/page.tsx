@@ -1,16 +1,20 @@
-"use client";
-
-import { useSearchParams } from "next/navigation";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 import "./checkout.css";
 
-export default function CheckoutPage() {
-  const searchParams = useSearchParams();
+type CheckoutPageProps = {
+  searchParams?: {
+    watch?: string;
+    entries?: string;
+  };
+};
 
-  const watch = searchParams.get("watch") || "pepsi";
-  const entries = Number(searchParams.get("entries") ?? "1");
+export default function CheckoutPage({
+  searchParams,
+}: CheckoutPageProps) {
+  const watch = searchParams?.watch || "pepsi";
+  const entries = Number(searchParams?.entries ?? "1");
 
   // Temporary until competitions.ts is introduced
   const competitions = {
