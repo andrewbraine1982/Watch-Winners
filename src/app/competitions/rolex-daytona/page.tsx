@@ -65,7 +65,7 @@ return (
 
     <>
 
-      <Navbar />
+<Navbar showCTA={false} />
 
       <main className="competition-page">
 
