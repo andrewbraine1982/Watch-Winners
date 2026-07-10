@@ -322,3 +322,28 @@ font-size:40px;
 }
 
 }
+.payment-trust{
+    margin-top:28px;
+    text-align:center;
+}
+
+.payment-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:16px;
+}
+
+.payment-icons img{
+    height:28px;
+    width:auto;
+    object-fit:contain;
+}
+
+.payment-trust p{
+    color:#777;
+    font-size:15px;
+    margin:0;
+}
