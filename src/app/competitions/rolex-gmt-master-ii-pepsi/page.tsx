@@ -184,37 +184,64 @@ return (
 
           <section className="entry-selector">
 
-            <h2>
-              Choose Your Entries
-            </h2>
+     <h2>
+  Choose Your Entries
+</h2>
 
-    
-          <div className="entry-grid">
+<div className="entry-progress">
+
+  <p className="progress-message">
+    {progressMessage}
+  </p>
+
+  <div className="progress-track">
+    <div
+      className="progress-fill"
+      style={{
+        width: `${progress}%`,
+      }}
+    />
+  </div>
+
+</div>
+
+<div className="entry-grid">
+
   {ticketOptions.map((ticket) => (
-    <button
+
+    <div
       key={ticket.entries}
       className={`entry-card ${
-        selectedEntries === ticket.entries ? "active" : ""
+        selectedEntries === ticket.entries
+          ? "selected"
+          : ""
       }`}
-      onClick={() => setSelectedEntries(ticket.entries)}
+      onClick={() =>
+        setSelectedEntries(ticket.entries)
+      }
     >
+
       {ticket.badge && (
         <span className="entry-badge">
           {ticket.badge}
         </span>
       )}
 
-      <h3>{ticket.entries}</h3>
+      <span className="entry-number">
+        {ticket.entries}
+      </span>
 
-      <p>
-        {ticket.entries === 1 ? "Entry" : "Entries"}
-      </p>
+      <small>
+        £{(
+          ticket.entries *
+          competition.price
+        ).toFixed(2)}
+      </small>
 
-      <strong>
-        £{(ticket.entries * competition.price).toFixed(2)}
-      </strong>
-    </button>
+    </div>
+
   ))}
+
 </div>
          <div className="entry-progress">
 
