@@ -1,4 +1,10 @@
-export default function Navbar() {
+type NavbarProps = {
+  showCTA?: boolean;
+};
+
+export default function Navbar({
+  showCTA = true,
+}: NavbarProps) {
   return (
     <header className="ww-navbar">
       <div className="ww-container">
@@ -11,16 +17,18 @@ export default function Navbar() {
         </a>
 
         <nav className="ww-nav-links">
-          <a href="#competitions">Competitions</a>
-          <a href="#how">How it Works</a>
-          <a href="#winners">Winners</a>
-          <a href="#trust">Trust</a>
-          <a href="#faq">FAQ</a>
+          <a href="/#competitions">Competitions</a>
+          <a href="/#how">How it Works</a>
+          <a href="/#winners">Winners</a>
+          <a href="/#trust">Trust</a>
+          <a href="/#faq">FAQ</a>
         </nav>
 
-        <a href="#competitions" className="ww-nav-cta">
-          Enter Now
-        </a>
+        {showCTA && (
+          <a href="/#competitions" className="ww-nav-cta">
+            Enter Now
+          </a>
+        )}
       </div>
     </header>
   );
