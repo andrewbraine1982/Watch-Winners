@@ -283,28 +283,33 @@ margin:40px auto 0;
 
     line-height:1.6;
 }
-
 /* ==========================================
    MOBILE
 ========================================== */
 
-@media(max-width:960px){
+@media (max-width:960px){
 
 .checkout-container{
 
-grid-template-columns:1fr;
+display:flex;
+flex-direction:column;
 
 }
 
 .checkout-summary{
 
-position:relative;
+order:1;
 
+position:relative;
 top:auto;
+
+margin-bottom:32px;
 
 }
 
 .checkout-form{
+
+order:2;
 
 padding:36px;
 
@@ -317,5 +322,3 @@ font-size:40px;
 }
 
 }
-
-
