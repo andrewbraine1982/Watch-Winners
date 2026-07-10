@@ -97,25 +97,19 @@ const competition =
               </div>
             </div>
 
-         <button className="checkout-button">
+        <button className="checkout-button">
   Complete Secure Entry
 </button>
 
 <div className="payment-trust">
-
-  <div className="payment-icons">
-    <img src="/payments/visa.svg" alt="Visa" />
-    <img src="/payments/mastercard.svg" alt="Mastercard" />
-    <img src="/payments/applepay.svg" alt="Apple Pay" />
-    <img src="/payments/googlepay.svg" alt="Google Pay" />
-  </div>
-
   <p>
     🔒 Secure payments powered by <strong>Stripe</strong>
   </p>
 
+  <p>
+    Visa • Mastercard • Apple Pay • Google Pay accepted
+  </p>
 </div>
-
           <aside className="checkout-summary">
             <img
               src={competition.image}
