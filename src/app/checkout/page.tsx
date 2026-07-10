@@ -57,7 +57,7 @@ const competition =
 
   return (
     <>
-      <Navbar />
+  <Navbar showCTA={false} />
 
       <main className="checkout-page">
         <div className="checkout-container">
