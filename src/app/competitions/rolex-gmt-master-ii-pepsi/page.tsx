@@ -188,25 +188,7 @@ return (
               Choose Your Entries
             </h2>
 
-            <div className="entry-progress">
-
-              <p className="progress-message">
-                {progressMessage}
-              </p>
-
-              <div className="progress-track">
-
-                <div
-                  className="progress-fill"
-                  style={{
-                    width: `${progress}%`
-                  }}
-                />
-
-              </div>
-
-            </div>
-
+    
           <div className="entry-grid">
   {ticketOptions.map((ticket) => (
     <button
@@ -234,6 +216,25 @@ return (
     </button>
   ))}
 </div>
+         <div className="entry-progress">
+
+              <p className="progress-message">
+                {progressMessage}
+              </p>
+
+              <div className="progress-track">
+
+                <div
+                  className="progress-fill"
+                  style={{
+                    width: `${progress}%`
+                  }}
+                />
+
+              </div>
+
+            </div>
+           
 
 
                         <div className="entry-summary">
