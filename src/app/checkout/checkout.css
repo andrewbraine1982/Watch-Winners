@@ -321,29 +321,19 @@ font-size:40px;
 
 }
 
-}
+/* ==========================================
+   PAYMENT TRUST
+========================================== */
+
 .payment-trust{
-    margin-top:28px;
+    margin-top:24px;
     text-align:center;
 }
 
-.payment-icons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:18px;
-    flex-wrap:wrap;
-    margin-bottom:16px;
-}
-
-.payment-icons img{
-    height:28px;
-    width:auto;
-    object-fit:contain;
-}
-
 .payment-trust p{
+    margin:8px 0;
     color:#777;
     font-size:15px;
-    margin:0;
+    line-height:1.5;
 }
+
