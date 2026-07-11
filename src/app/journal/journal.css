@@ -2,28 +2,33 @@
     background:#fff;
 }
 
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
 .journal-hero{
-    height:90vh;
-    min-height:720px;
+
+    height:82vh;
+    min-height:700px;
 
     background-image:url("/images/journal/patek-hero.jpg");
     background-size:cover;
     background-position:center;
-
-    display:flex;
-    align-items:flex-end;
 }
 
-.journal-overlay{
+/* ==========================================
+   FEATURED STORY
+========================================== */
 
-    width:100%;
-    max-width:700px;
+.journal-feature{
 
-    margin:0 0 90px 120px;
+    max-width:1200px;
 
-    background:#ffffffee;
+    margin:0 auto;
 
-    padding:60px;
+    padding:70px 40px 90px;
+
+    background:#fff;
 }
 
 .journal-label{
@@ -39,28 +44,32 @@
     margin-bottom:24px;
 }
 
-.journal-overlay h1{
+.journal-feature h1{
 
     font-family:Georgia,serif;
 
-    font-size:64px;
+    font-size:72px;
 
     line-height:1.05;
 
-    margin-bottom:24px;
-
     color:#111;
+
+    max-width:760px;
+
+    margin-bottom:28px;
 }
 
 .journal-intro{
 
-    font-size:20px;
+    max-width:700px;
+
+    font-size:22px;
 
     line-height:1.8;
 
     color:#555;
 
-    margin-bottom:36px;
+    margin-bottom:40px;
 }
 
 .journal-button{
@@ -89,25 +98,34 @@
     color:#111;
 }
 
+/* ==========================================
+   MOBILE
+========================================== */
+
 @media(max-width:900px){
 
-.journal-overlay{
+.journal-hero{
 
-margin:30px;
-
-padding:36px;
+height:60vh;
+min-height:420px;
 
 }
 
-.journal-overlay h1{
+.journal-feature{
 
-font-size:42px;
+padding:40px 24px 60px;
+
+}
+
+.journal-feature h1{
+
+font-size:46px;
 
 }
 
 .journal-intro{
 
-font-size:17px;
+font-size:18px;
 
 }
 
