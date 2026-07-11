@@ -1,44 +1,124 @@
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+.journal-page{
+    background:#fff;
+}
 
-import "./journal.css";
+.journal-hero{
 
-export default function JournalPage() {
-  return (
-    <>
-      <Navbar showCTA={false} />
+    height:78vh;
+    min-height:700px;
 
-      {/* HERO IMAGE */}
-      <section className="journal-hero"></section>
+    background-image:url("/images/journal/patek-hero-wide.png");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
 
-      {/* ARTICLE INTRO */}
-      <main className="journal-page">
-        <section className="journal-overlay">
+.journal-overlay{
 
-          <p className="journal-label">
-            FEATURED STORY
-          </p>
+    max-width:900px;
 
-          <h1>
-            The Patek Philippe
-            <br />
-            Sky Moon Tourbillon
-          </h1>
+    margin:90px auto 120px;
 
-          <p className="journal-intro">
-            A look inside one of the world's most extraordinary
-            complications and why collectors consider it the pinnacle
-            of traditional watchmaking.
-          </p>
+    padding:0 40px;
+}
 
-          <a href="#" className="journal-button">
-            Read Story →
-          </a>
+.journal-label{
 
-        </section>
-      </main>
+    color:#b89035;
 
-      <Footer />
-    </>
-  );
+    letter-spacing:4px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:24px;
+}
+
+.journal-overlay h1{
+
+    font-family:Georgia,serif;
+
+    font-size:72px;
+
+    line-height:1.05;
+
+    font-weight:400;
+
+    color:#111;
+
+    margin-bottom:30px;
+}
+
+.journal-intro{
+
+    max-width:760px;
+
+    font-size:26px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:50px;
+}
+
+.journal-button{
+
+    display:inline-block;
+
+    padding:18px 38px;
+
+    background:#111;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.journal-button:hover{
+
+    background:#d4af4f;
+
+    color:#111;
+}
+
+@media(max-width:900px){
+
+.journal-hero{
+
+height:50vh;
+
+min-height:360px;
+
+background-position:center;
+
+}
+
+.journal-overlay{
+
+margin:60px auto;
+
+padding:0 24px;
+
+}
+
+.journal-overlay h1{
+
+font-size:44px;
+
+}
+
+.journal-intro{
+
+font-size:18px;
+
+}
+
 }
