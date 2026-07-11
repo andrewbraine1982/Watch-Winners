@@ -110,6 +110,7 @@ const competition =
     Visa • Mastercard • Apple Pay • Google Pay accepted
   </p>
 </div>
+            </section>
           <aside className="checkout-summary">
             <img
               src={competition.image}
