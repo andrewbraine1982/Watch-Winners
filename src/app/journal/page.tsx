@@ -9,7 +9,15 @@ export default function JournalPage() {
       <Navbar showCTA={false} />
 
       <main className="journal-page">
-<section className="journal-hero"></section>
+<section className="journal-hero">
+
+  <img
+    src="/images/journal/patek-hero.jpg"
+    alt="Patek Philippe Sky Moon Tourbillon"
+    className="journal-hero-image"
+  />
+
+</section>
 
 <section className="journal-feature">
 
