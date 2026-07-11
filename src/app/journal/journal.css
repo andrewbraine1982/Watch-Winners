@@ -8,15 +8,23 @@
 
 .journal-hero{
 
-    height:72vh;
-    min-height:640px;
+    width:100%;
 
-    background-image:url("/images/journal/patek-hero.jpg");
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center bottom;
+    background:#1a1d22;
 
-    background-color:#1a1d22;
+    display:flex;
+    justify-content:center;
+}
+
+.journal-hero-image{
+
+    width:100%;
+
+    max-width:1400px;
+
+    height:auto;
+
+    display:block;
 }
 
 /* ===========================
