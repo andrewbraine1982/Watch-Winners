@@ -1,157 +1,44 @@
-.journal-page{
-    background:#fff;
-}
-
-/* ===========================
-   HERO IMAGE
-=========================== */
-
-.journal-hero{
-
-    height:72vh;
-    min-height:620px;
-
-    background-image:url("/images/journal/patek-hero-wide.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    background-color:#1a1d22;
-}
-
-/* ===========================
-   ARTICLE INTRO
-=========================== */
-
-.journal-overlay{
-
-    max-width:900px;
-
-    margin:90px auto 120px;
-
-    padding:0 40px;
-}
-
-.journal-label{
-
-    color:#b89035;
-
-    letter-spacing:5px;
-
-    font-size:14px;
-
-    font-weight:700;
-
-    text-transform:uppercase;
-
-    margin-bottom:24px;
-}
-
-.journal-label::after{
-
-    content:"";
-
-    display:block;
-
-    width:70px;
-
-    height:2px;
-
-    background:#b89035;
-
-    margin-top:18px;
-}
-
-.journal-overlay h1{
-
-    font-family:Georgia,serif;
-
-    font-size:86px;
-
-    line-height:.95;
-
-    font-weight:400;
-
-    color:#111;
-
-    margin:40px 0;
-}
-
-.journal-intro{
-
-    max-width:760px;
-
-    font-size:22px;
-
-    line-height:1.8;
-
-    color:#555;
-
-    margin-bottom:50px;
-}
-
-.journal-button{
-
-    display:inline-block;
-
-    padding:18px 42px;
-
-    background:#111;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    border-radius:999px;
-
-    font-weight:700;
-
-    transition:.3s;
-}
-
-.journal-button:hover{
-
-    background:#d4af4f;
-
-    color:#111;
-}
-
-/* ===========================
-   MOBILE
-=========================== */
-
-@media(max-width:900px){
-
-.journal-hero{
-
-height:50vh;
-
-min-height:360px;
-
-background-position:center;
-
-}
-
-.journal-overlay{
-
-margin:60px auto;
-
-padding:0 24px;
-
-}
-
-.journal-overlay h1{
-
-font-size:52px;
-
-line-height:1;
-
-}
-
-.journal-intro{
-
-font-size:18px;
-
-}
-
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+
+import "./journal.css";
+
+export default function JournalPage() {
+  return (
+    <>
+      <Navbar showCTA={false} />
+
+      {/* HERO IMAGE */}
+      <section className="journal-hero"></section>
+
+      {/* ARTICLE INTRO */}
+      <main className="journal-page">
+        <section className="journal-overlay">
+
+          <p className="journal-label">
+            FEATURED STORY
+          </p>
+
+          <h1>
+            The Patek Philippe
+            <br />
+            Sky Moon Tourbillon
+          </h1>
+
+          <p className="journal-intro">
+            A look inside one of the world's most extraordinary
+            complications and why collectors consider it the pinnacle
+            of traditional watchmaking.
+          </p>
+
+          <a href="#" className="journal-button">
+            Read Story →
+          </a>
+
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
 }
