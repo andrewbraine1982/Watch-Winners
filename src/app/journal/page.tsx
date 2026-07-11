@@ -8,41 +8,34 @@ export default function JournalPage() {
     <>
       <Navbar showCTA={false} />
 
+      {/* HERO IMAGE */}
+      <section className="journal-hero"></section>
+
+      {/* ARTICLE INTRO */}
       <main className="journal-page">
-<section className="journal-hero">
+        <section className="journal-overlay">
 
-  <img
-    src="/images/journal/patek-hero.jpg"
-    alt="Patek Philippe Sky Moon Tourbillon"
-    className="journal-hero-image"
-  />
+          <p className="journal-label">
+            FEATURED STORY
+          </p>
 
-</section>
+          <h1>
+            The Patek Philippe
+            <br />
+            Sky Moon Tourbillon
+          </h1>
 
-<section className="journal-feature">
+          <p className="journal-intro">
+            A look inside one of the world's most extraordinary
+            complications and why collectors consider it the pinnacle
+            of traditional watchmaking.
+          </p>
 
-  <p className="journal-label">
-    FEATURED STORY
-  </p>
+          <a href="#" className="journal-button">
+            Read Story →
+          </a>
 
-  <h1>
-    The Patek Philippe
-    <br />
-    Sky Moon Tourbillon
-  </h1>
-
-  <p className="journal-intro">
-    A look inside one of the world's most
-    extraordinary complications and why
-    collectors consider it the pinnacle of
-    traditional watchmaking.
-  </p>
-
-  <a href="#" className="journal-button">
-    Read Story →
-  </a>
-
-</section>
+        </section>
       </main>
 
       <Footer />
