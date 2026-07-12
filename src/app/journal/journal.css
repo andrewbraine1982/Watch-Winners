@@ -1,17 +1,25 @@
 .journal-page{
-    background:#fff;
+    background:#f8f6f1;
 }
+
+/* ==========================================
+   HERO
+========================================== */
 
 .journal-hero{
 
-    height:78vh;
-    min-height:700px;
+    height:82vh;
+    min-height:720px;
 
     background-image:url("/images/journal/patek-hero-wide.png");
     background-size:cover;
-    background-position:center center;
+    background-position:center;
     background-repeat:no-repeat;
 }
+
+/* ==========================================
+   FEATURED ARTICLE
+========================================== */
 
 .journal-overlay{
 
@@ -32,7 +40,9 @@
 
     font-weight:700;
 
-    margin-bottom:24px;
+    text-transform:uppercase;
+
+    margin-bottom:22px;
 }
 
 .journal-overlay h1{
@@ -54,7 +64,7 @@
 
     max-width:760px;
 
-    font-size:26px;
+    font-size:24px;
 
     line-height:1.8;
 
@@ -89,15 +99,194 @@
     color:#111;
 }
 
+/* ==========================================
+   CONTENT SECTIONS
+========================================== */
+
+.journal-section{
+
+    max-width:1200px;
+
+    margin:120px auto;
+
+    padding:0 40px;
+}
+
+.journal-section h2{
+
+    font-family:Georgia,serif;
+
+    font-size:42px;
+
+    font-weight:400;
+
+    color:#111;
+
+    margin-bottom:50px;
+}
+
+/* ==========================================
+   ARTICLE GRID
+========================================== */
+
+.journal-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+}
+
+.journal-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:36px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.journal-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+}
+
+.journal-card.featured{
+
+    border:2px solid #d4af4f;
+}
+
+.journal-card span{
+
+    color:#b89035;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+}
+
+.journal-card h3{
+
+    font-family:Georgia,serif;
+
+    font-size:30px;
+
+    line-height:1.25;
+
+    font-weight:400;
+
+    color:#111;
+
+    margin:18px 0;
+}
+
+.journal-card p{
+
+    color:#777;
+
+    line-height:1.7;
+}
+
+/* ==========================================
+   BRANDS
+========================================== */
+
+.brand-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:20px;
+}
+
+.brand-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    font-weight:700;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+    transition:.3s;
+}
+
+.brand-card:hover{
+
+    transform:translateY(-5px);
+
+    background:#111;
+
+    color:#fff;
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter{
+
+    max-width:900px;
+
+    margin:120px auto;
+
+    padding:80px 40px;
+
+    text-align:center;
+}
+
+.newsletter h2{
+
+    font-family:Georgia,serif;
+
+    font-size:52px;
+
+    font-weight:400;
+
+    margin-bottom:24px;
+}
+
+.newsletter p{
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
 @media(max-width:900px){
 
 .journal-hero{
 
-height:50vh;
+height:48vh;
 
 min-height:360px;
-
-background-position:center;
 
 }
 
@@ -111,13 +300,43 @@ padding:0 24px;
 
 .journal-overlay h1{
 
-font-size:44px;
+font-size:46px;
 
 }
 
 .journal-intro{
 
 font-size:18px;
+
+}
+
+.journal-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.brand-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.journal-section{
+
+padding:0 24px;
+
+}
+
+.newsletter{
+
+padding:60px 24px;
+
+}
+
+.newsletter h2{
+
+font-size:38px;
 
 }
 
