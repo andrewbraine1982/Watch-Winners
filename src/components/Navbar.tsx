@@ -16,13 +16,14 @@ export default function Navbar({
           />
         </a>
 
-        <nav className="ww-nav-links">
-          <a href="/#competitions">Competitions</a>
-          <a href="/#how">How it Works</a>
-          <a href="/#winners">Winners</a>
-          <a href="/#trust">Trust</a>
-          <a href="/#faq">FAQ</a>
-        </nav>
+       <nav className="ww-nav-links">
+  <a href="/#competitions">Competitions</a>
+  <a href="/journal">Journal</a>
+  <a href="/#how">How it Works</a>
+  <a href="/#winners">Winners</a>
+  <a href="/#trust">Trust</a>
+  <a href="/#faq">FAQ</a>
+</nav>
 
         {showCTA && (
           <a href="/#competitions" className="ww-nav-cta">
