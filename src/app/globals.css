@@ -2013,3 +2013,129 @@ background:linear-gradient(180deg,#1d1d1f,#121212);
   }
 
 }
+/* ==========================================
+   MOBILE NAVIGATION
+========================================== */
+
+.ww-menu-button{
+display:none;
+background:none;
+border:none;
+cursor:pointer;
+padding:0;
+width:40px;
+height:40px;
+flex-direction:column;
+justify-content:center;
+gap:6px;
+}
+
+.ww-menu-button span{
+display:block;
+height:2px;
+background:#111;
+border-radius:999px;
+transition:.3s;
+}
+
+.ww-menu-button span:nth-child(1){
+width:26px;
+}
+
+.ww-menu-button span:nth-child(2){
+width:20px;
+}
+
+.ww-menu-button span:nth-child(3){
+width:26px;
+}
+
+.ww-mobile-menu{
+display:none;
+}
+
+.ww-mobile-cta{
+display:inline-block;
+margin-top:18px;
+padding:14px 24px;
+background:#d4af4f;
+color:#111;
+border-radius:999px;
+font-weight:700;
+text-align:center;
+text-decoration:none;
+}
+
+@media (max-width:900px){
+
+.ww-container{
+
+height:90px;
+
+padding:0 20px;
+
+}
+
+.ww-logo-image{
+
+height:110px;
+
+transform:none;
+
+}
+
+.ww-nav-links{
+
+display:none;
+
+}
+
+.ww-nav-cta{
+
+display:none;
+
+}
+
+.ww-menu-button{
+
+display:flex;
+
+}
+
+.ww-mobile-menu{
+
+display:none;
+
+flex-direction:column;
+
+padding:25px;
+
+background:#f8f6f2;
+
+border-top:1px solid rgba(0,0,0,.08);
+
+}
+
+.ww-mobile-menu.open{
+
+display:flex;
+
+}
+
+.ww-mobile-menu a{
+
+padding:16px 0;
+
+font-size:18px;
+
+font-weight:600;
+
+text-decoration:none;
+
+color:#111;
+
+border-bottom:1px solid rgba(0,0,0,.06);
+
+}
+
+}
