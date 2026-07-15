@@ -70,12 +70,12 @@ export default function Competitions() {
                   From {watch.price}
                 </strong>
 
-                <a
-                  href={watch.link}
-                  className="ww-nav-cta"
-                >
-                  Enter Now
-                </a>
+               <a
+  href={watch.link}
+  className="competition-cta"
+>
+  Enter Now
+</a>
               </div>
             </div>
           </article>
