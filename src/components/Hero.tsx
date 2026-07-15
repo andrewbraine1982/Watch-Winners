@@ -84,9 +84,9 @@ export default function Hero() {
         </p>
 
         <div className="hero-buttons">
-        <a
+ <a
   href="/competitions/rolex-gmt-master-ii-pepsi"
-  className="hero-primary ww-nav-cta"
+  className="hero-primary"
 >
   Enter Now
 </a>
