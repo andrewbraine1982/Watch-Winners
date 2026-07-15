@@ -2139,3 +2139,30 @@ border-bottom:1px solid rgba(0,0,0,.06);
 }
 
 }
+.competition-cta{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 28px;
+    background:#d4af4f;
+    color:#111;
+    font-weight:700;
+    border-radius:999px;
+    text-decoration:none;
+    transition:.25s ease;
+}
+
+.competition-cta:hover{
+    transform:translateY(-2px);
+    background:#c79d2f;
+}
+
+@media (max-width:900px){
+
+    .competition-cta{
+        display:inline-flex;
+        padding:12px 22px;
+        font-size:15px;
+    }
+
+}
