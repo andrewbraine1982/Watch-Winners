@@ -66,7 +66,7 @@ export default function Footer() {
             London WC2H 9JQ
           </p>
 
-          <p>hello@watchwinners.co.uk</p>
+          <p>hello@watchwinners.com</p>
 
         </div>
 
