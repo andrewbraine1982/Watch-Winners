@@ -73,79 +73,105 @@ line-height:1.7;
 NAVBAR
 =========================== */
 
-.ww-navbar{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(248,246,242,.92);
-backdrop-filter:blur(14px);
-border-bottom:1px solid rgba(0,0,0,.05);
+.ww-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f8f6f2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.ww-container{
-    max-width:1400px;
-    margin:auto;
-    height:145px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 40px;
+.ww-container {
+  max-width: 1400px;
+  height: 112px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.ww-logo{
-  display:flex;
-  align-items:center;
+.ww-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
 }
 
-.ww-logo-image{
-  height:180px;
-  width:auto;
-  display:block;
-  transform:translateY(18px);
+.ww-logo-image {
+  display: block;
+  width: 210px;
+  height: auto;
+  max-height: 102px;
+  object-fit: contain;
 }
 
-.ww-logo-mark{
-width:54px;
-height:54px;
-border-radius:50%;
-background:#0d3b2e;
-color:#fff;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:900;
-font-size:22px;
+.ww-logo-mark {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #0d3b2e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 22px;
 }
 
-.ww-logo-text{
-display:flex;
-flex-direction:column;
-font-weight:900;
-line-height:.88;
-letter-spacing:-1px;
+.ww-logo-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -1px;
 }
 
-.ww-nav-links{
-display:flex;
-gap:42px;
+.ww-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 38px;
 }
 
-.ww-nav-links a{
-    font-size:17px;
-    font-weight:600;
-    letter-spacing:.45px;
-    color:#171717;
-    text-decoration:none;
-    transition:all .25s ease;
+.ww-nav-links a {
+  position: relative;
+  padding: 8px 0;
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  color: #171717;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
 }
 
-.ww-nav-links a:hover{
-    color:#c7a23a;
+.ww-nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+
+  width: 0;
+  height: 1px;
+  background: #171717;
+
+  transition: width 0.2s ease;
 }
 
-.ww-enter-button{
-padding:16px 30px;
-   }
+.ww-nav-links a:hover {
+  color: #171717;
+}
+
+.ww-nav-links a:hover::after {
+  width: 100%;
+}
+
+.ww-enter-button {
+  padding: 16px 30px;
+}
 /* ===========================
 HERO
 =========================== */
