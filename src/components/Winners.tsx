@@ -7,14 +7,14 @@ watch: "Rolex Datejust",
     quote:
       "I genuinely thought it was a prank until the Rolex arrived the next morning.",
   },
-  {
- name: "Michael H.",
-town: "Manchester",
-watch: "Rolex Daytona",
-   image: "/images/winners/winner2.jpg",
-    quote:
-      "Everything was transparent from start to finish. I still can't believe I won.",
-  },
+ {
+  name: "Richard F.",
+  town: "Southampton",
+  watch: "Rolex Yacht-Master",
+  image: "/images/winners/richard-f.jpg",
+  quote:
+    "I still can't believe it! I am so delighted! Andrew at Watch Winners was so helpful and professional.",
+},
   {
   name: "Stephen R.",
 town: "Bristol",
