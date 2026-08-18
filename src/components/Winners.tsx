@@ -11,7 +11,7 @@ watch: "Rolex Datejust",
   name: "Richard F.",
   town: "Southampton",
   watch: "Rolex Yacht-Master",
-  image: "/images/winners/richard-f.jpg",
+  image: "/images/winners/richard-f.jpeg",
   quote:
     "I still can't believe it! I am so delighted! Andrew at Watch Winners was so helpful and professional.",
 },
